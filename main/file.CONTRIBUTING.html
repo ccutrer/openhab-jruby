@@ -33,6 +33,9 @@
   <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
 
 
+    <meta property="og:description" name="description" content="Documentation for openhab-scripting JRuby helper library.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/jruby/collateral/master/logos/PNGs/circle-fill/full-color/jruby-logo-circle-logo-fill-outline-medium.png">
+    <meta property="og:image:alt" content="The JRuby logo">
     <script type="text/javascript">
       indexpath = 'index.json';
       base_url = '';
@@ -80,7 +83,7 @@
         </nav>
         <div class="page-versions">
   <ul class="version-switcher">
-    <li><a href="/openhab-jruby/5.0" class="version-button stable">Stable <small>(5.0)</small></a></li>
+    <li><a href="/openhab-jruby/5.1" class="version-button stable">Stable <small>(5.1)</small></a></li>
     <li><a href="/openhab-jruby/main" class="version-button main">Latest <small>(main)</small></a></li>
   </ul>
   
@@ -968,13 +971,54 @@
   </li>
 
   
-  <li class="">
+  <li class="collapsed">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="OpenHAB/Core/Items/Semantics.html" title="OpenHAB::Core::Items::Semantics (module)">Semantics</a></span>
       
       
+        <a class="arrow toggle right"></a>
+      
     </span>
     
+    
+      
+      <ul>
+        
+        
+  
+  
+  
+  
+  
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="OpenHAB/Core/Items/Semantics/TagClassMethods.html" title="OpenHAB::Core::Items::Semantics::TagClassMethods (module)">TagClassMethods</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+        
+      </ul>
     
   </li>
 
@@ -2631,11 +2675,11 @@
       <main class="page">
         <div class="content"><div id='filecontents'><h1 id="contributing"><a href="#contributing" class="header-anchor">#</a>Contributing</h1>
 <p>Contributions, issues and pull requests are welcome.  Please visit the <a href="https://github.com/openhab/openhab-jruby">GitHub home</a> for this project.</p>
-<h1 id="license"><a href="#license" class="header-anchor">#</a>License</h1>
+<h2 id="license"><a href="#license" class="header-anchor">#</a>License</h2>
 <p>This code is under the <a href="https://www.eclipse.org/legal/epl-2.0/">Eclipse v2 license</a></p>
-<h1 id="source"><a href="#source" class="header-anchor">#</a>Source</h1>
+<h2 id="source"><a href="#source" class="header-anchor">#</a>Source</h2>
 <p>JRuby Scripting openHAB is hosted on <a href="https://github.com/openhab/openhab-jruby">GitHub</a>.</p>
-<h1 id="development-environment-setup"><a href="#development-environment-setup" class="header-anchor">#</a>Development Environment Setup</h1>
+<h2 id="development-environment-setup"><a href="#development-environment-setup" class="header-anchor">#</a>Development Environment Setup</h2>
 <p>The development process has been tested on MacOS, and Ubuntu. Other operating systems may work.</p>
 <ol>
 <li>Install Ruby 2.6.8 and JRuby 9.3.8.0 (or later)</li>
@@ -2653,9 +2697,9 @@
 <li>Run <code>bundle exec rake openhab:setup</code> from inside of the repo directory.  This will download a copy of openHAB local in your development environment, start it and prepare it for JRuby openHAB Scripting Development</li>
 <li>Install <a href="https://pre-commit.com">pre-commit</a> and then run <code>pre-commit install</code> if you would like to install a git pre-commit hook to automatically run rubocop.</li>
 </ol>
-<h1 id="code-documentation"><a href="#code-documentation" class="header-anchor">#</a>Code Documentation</h1>
+<h2 id="code-documentation"><a href="#code-documentation" class="header-anchor">#</a>Code Documentation</h2>
 <p>Code documentation is written in <a href="https://yardoc.org/">Yard</a> and the current documentation for this project is available on <a href="https://openhab.github.io/openhab-jruby/">GitHub pages</a>.</p>
-<h1 id="development-process"><a href="#development-process" class="header-anchor">#</a>Development Process</h1>
+<h2 id="development-process"><a href="#development-process" class="header-anchor">#</a>Development Process</h2>
 <ol>
 <li>Create a branch for your contribution.</li>
 <li>Write your tests the project uses <a href="https://en.wikipedia.org/wiki/Behavior-driven_development">Behavior Driven Development</a> with <a href="https://rspec.info/">RSpec</a>. The spec directory has many examples.  Feel free ask in your PR if you need help.</li>
@@ -2666,10 +2710,29 @@
 <li>Submit your PR(s)!</li>
 </ol>
 <p>If you get stuck or need help along the way, please open an issue.</p>
+<h2 id="release-process"><a href="#release-process" class="header-anchor">#</a>Release Process</h2>
+<p>A release is triggered manually using the GitHub <a href="https://github.com/openhab/openhab-jruby/blob/main/.github/workflows/release.yml">Release Workflow</a> which will
+perform these steps:</p>
+<ol>
+<li>Update the <a href="https://github.com/openhab/openhab-jruby/blob/main/CHANGELOG.md">changelog</a> automatically.
+<ul>
+<li>It will collect all issues and pull requests labelled <code>bug</code>, <code>enhancements</code> or <code>breaking</code>
+that have been closed / merged since the last release.</li>
+<li>Issues/PRs without labels won't be included in the changelog.</li>
+<li>The issue/PR titles will be used as the log entry. They can be edited prior to running the release action.</li>
+<li>An optional <a href="https://github.com/github-changelog-generator/github-changelog-generator#using-the-summary-section-feature">release summary</a>
+can be added by creating and <em>closing</em> an issue labelled <code>release-summary</code>. The content of the issue's first post will be inserted under the version number heading.</li>
+</ul>
+</li>
+<li>Bump the library's <a href="https://github.com/openhab/openhab-jruby/blob/main/lib/openhab/dsl/version.rb">version number</a>.</li>
+<li>Commit the updated changelog and version number to the github repository.</li>
+<li>Create a new version tag and GitHub release entry.</li>
+<li>Publish the new gem version to RubyGems.</li>
+</ol>
 </div></div>
 
         <footer>
-  Generated on Thu Feb 23 19:02:10 2023 by
+  Generated on Wed Apr 19 17:27:58 2023 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.28 (ruby-3.1.3).
 </footer>
