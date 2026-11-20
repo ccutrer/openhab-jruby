@@ -33,6 +33,7 @@
   <script type="text/javascript" charset="utf-8" src="../../../js/app.js"></script>
 
 
+    <script type="text/javascript" charset="utf-8" src="https://openhab.github.io/openhab-jruby/js/versions.js"></script>
     <meta property="og:description" name="description" content="A thing builder allows you to dynamically create openHAB things at runtime.
 This can be useful either to create things as soon as the script loads,
 or even later based on a rule executing. - Documentation for openhab-scripting JRuby helper library.">
@@ -85,11 +86,20 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
         </nav>
         <div class="page-versions">
   <ul class="version-switcher">
-    <li><a href="/openhab-jruby/5.0" class="version-button stable">Stable <small>(5.0)</small></a></li>
+    <li><a href="/openhab-jruby/5.52" class="version-button stable">Stable <small>(5.52)</small></a></li>
     <li><a href="/openhab-jruby/main" class="version-button main">Latest <small>(main)</small></a></li>
   </ul>
-  
-  
+  <div class="archived-versions">
+    <div class="dropdown-wrapper">
+      <a class="dropdown-title">
+        <span class="title">Archived</span>
+        <span class="arrow down"></span>
+      </a>
+      <ul class="nav-dropdown" id="version-dropdown">
+        
+      </ul>
+    </div>
+  </div>
 </div>
 
 
@@ -287,6 +297,19 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Actions/Notification.html" title="OpenHAB::Core::Actions::Notification (class)">Notification</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Actions/Ping.html" title="OpenHAB::Core::Actions::Ping (class)">Ping</a></span>
       
         &lt; Object
@@ -327,6 +350,19 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
 
         
       </ul>
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../../Core/Configuration.html" title="OpenHAB::Core::Configuration (class)">Configuration</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
     
   </li>
 
@@ -380,6 +416,17 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../../Core/EmulateHash.html" title="OpenHAB::Core::EmulateHash (module)">EmulateHash</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../../Core/EntityLookup.html" title="OpenHAB::Core::EntityLookup (module)">EntityLookup</a></span>
       
       
@@ -419,6 +466,19 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Events/AbstractItemChannelLinkRegistryEvent.html" title="OpenHAB::Core::Events::AbstractItemChannelLinkRegistryEvent (class)">AbstractItemChannelLinkRegistryEvent</a></span>
+      
+        &lt; AbstractEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Events/AbstractItemRegistryEvent.html" title="OpenHAB::Core::Events::AbstractItemRegistryEvent (class)">AbstractItemRegistryEvent</a></span>
       
         &lt; AbstractEvent
@@ -445,9 +505,48 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Events/ChannelTriggeredEvent.html" title="OpenHAB::Core::Events::ChannelTriggeredEvent (class)">ChannelTriggeredEvent</a></span>
+      
+        &lt; AbstractEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Events/ItemAddedEvent.html" title="OpenHAB::Core::Events::ItemAddedEvent (class)">ItemAddedEvent</a></span>
       
         &lt; AbstractItemRegistryEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Events/ItemChannelLinkAddedEvent.html" title="OpenHAB::Core::Events::ItemChannelLinkAddedEvent (class)">ItemChannelLinkAddedEvent</a></span>
+      
+        &lt; AbstractItemChannelLinkRegistryEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Events/ItemChannelLinkRemovedEvent.html" title="OpenHAB::Core::Events::ItemChannelLinkRemovedEvent (class)">ItemChannelLinkRemovedEvent</a></span>
+      
+        &lt; AbstractItemChannelLinkRegistryEvent
       
       
     </span>
@@ -481,6 +580,7 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
     
   </li>
 
+  
   
   <li class="">
     <span class="sidebar-link">
@@ -534,9 +634,102 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Events/ItemStateUpdatedEvent.html" title="OpenHAB::Core::Events::ItemStateUpdatedEvent (class)">ItemStateUpdatedEvent</a></span>
+      
+        &lt; ItemEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Events/ItemTimeSeriesUpdatedEvent.html" title="OpenHAB::Core::Events::ItemTimeSeriesUpdatedEvent (class)">ItemTimeSeriesUpdatedEvent</a></span>
+      
+        &lt; ItemEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Events/ItemUpdatedEvent.html" title="OpenHAB::Core::Events::ItemUpdatedEvent (class)">ItemUpdatedEvent</a></span>
       
         &lt; AbstractItemRegistryEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Events/Source.html" title="OpenHAB::Core::Events::Source (class)">Source</a></span>
+      
+        &lt; Delegator
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  
+  
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="../../Core/Events/Source/Component.html" title="OpenHAB::Core::Events::Source::Component (class)">Component</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Events/StartlevelEvent.html" title="OpenHAB::Core::Events::StartlevelEvent (class)">StartlevelEvent</a></span>
+      
+        &lt; AbstractEvent
       
       
     </span>
@@ -609,6 +802,107 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
     
   </li>
 
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Events/TimerEvent.html" title="OpenHAB::Core::Events::TimerEvent (class)">TimerEvent</a></span>
+      
+        &lt; AbstractEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../../Core/IO.html" title="OpenHAB::Core::IO (module)">IO</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/IO/Transport.html" title="OpenHAB::Core::IO::Transport (module)">Transport</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="../../Core/IO/Transport/Serial.html" title="OpenHAB::Core::IO::Transport::Serial (module)">Serial</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-5" href="../../Core/IO/Transport/Serial/SerialPort.html" title="OpenHAB::Core::IO::Transport::Serial::SerialPort (class)">SerialPort</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-5" href="../../Core/IO/Transport/Serial/SerialPortManager.html" title="OpenHAB::Core::IO::Transport::Serial::SerialPortManager (module)">SerialPortManager</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+
+        
+      </ul>
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
 
         
       </ul>
@@ -630,6 +924,19 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
       <ul>
         
         
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Items/CallItem.html" title="OpenHAB::Core::Items::CallItem (class)">CallItem</a></span>
+      
+        &lt; GenericItem
+      
+      
+    </span>
+    
+    
+  </li>
+
   
   <li class="">
     <span class="sidebar-link">
@@ -696,6 +1003,17 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   </li>
 
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Items/GroupFunction.html" title="OpenHAB::Core::Items::GroupFunction (module)">GroupFunction</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
   <li class="collapsed">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Items/GroupItem.html" title="OpenHAB::Core::Items::GroupItem (class)">GroupItem</a></span>
@@ -730,6 +1048,7 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   
   
+  
 
         
       </ul>
@@ -753,6 +1072,19 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   <li class="">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Items/Item.html" title="OpenHAB::Core::Items::Item (module)">Item</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Items/ItemChannelLinks.html" title="OpenHAB::Core::Items::ItemChannelLinks (class)">ItemChannelLinks</a></span>
+      
+        &lt; SimpleDelegator
       
       
     </span>
@@ -873,9 +1205,10 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
         
         
   
+  
   <li class="">
     <span class="sidebar-link">
-      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="../../Core/Items/Persistence/HistoricState.html" title="OpenHAB::Core::Items::Persistence::HistoricState (class)">HistoricState</a></span>
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="../../Core/Items/Persistence/PersistedState.html" title="OpenHAB::Core::Items::Persistence::PersistedState (class)">PersistedState</a></span>
       
         &lt; SimpleDelegator
       
@@ -885,6 +1218,38 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
     
   </li>
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -992,10 +1357,11 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   
   
-  
   <li class="">
     <span class="sidebar-link">
-      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="../../Core/Items/Semantics/TagClassMethods.html" title="OpenHAB::Core::Items::Semantics::TagClassMethods (module)">TagClassMethods</a></span>
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="../../Core/Items/Semantics/Provider.html" title="OpenHAB::Core::Items::Semantics::Provider (class)">Provider</a></span>
+      
+        &lt; Provider
       
       
     </span>
@@ -1003,6 +1369,18 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
     
   </li>
 
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="../../Core/Items/Semantics/SemanticTag.html" title="OpenHAB::Core::Items::Semantics::SemanticTag (module)">SemanticTag</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
   
   
   
@@ -1063,18 +1441,6 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
     
   </li>
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
 
         
@@ -1175,6 +1541,19 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Rules/TaggedArray.html" title="OpenHAB::Core::Rules::TaggedArray (class)">TaggedArray</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
   
 
         
@@ -1196,6 +1575,86 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   <li class="collapsed">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../../Core/Sitemaps.html" title="OpenHAB::Core::Sitemaps (module)">Sitemaps</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Sitemaps/LinkableWidget.html" title="OpenHAB::Core::Sitemaps::LinkableWidget (module)">LinkableWidget</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Sitemaps/Provider.html" title="OpenHAB::Core::Sitemaps::Provider (class)">Provider</a></span>
+      
+        &lt; Provider
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Sitemaps/Registry.html" title="OpenHAB::Core::Sitemaps::Registry (class)">Registry</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Sitemaps/Sitemap.html" title="OpenHAB::Core::Sitemaps::Sitemap (module)">Sitemap</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Sitemaps/Widget.html" title="OpenHAB::Core::Sitemaps::Widget (module)">Widget</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../../Core/Things.html" title="OpenHAB::Core::Things (module)">Things</a></span>
       
       
@@ -1208,6 +1667,19 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
       <ul>
         
         
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/AbstractDescriptionType.html" title="OpenHAB::Core::Things::AbstractDescriptionType (class)">AbstractDescriptionType</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
   
   <li class="">
     <span class="sidebar-link">
@@ -1224,9 +1696,100 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   <li class="">
     <span class="sidebar-link">
-      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/ChannelUID.html" title="OpenHAB::Core::Things::ChannelUID (class)">ChannelUID</a></span>
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/ChannelDefinition.html" title="OpenHAB::Core::Things::ChannelDefinition (class)">ChannelDefinition</a></span>
       
         &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/ChannelGroupDefinition.html" title="OpenHAB::Core::Things::ChannelGroupDefinition (class)">ChannelGroupDefinition</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/ChannelGroupType.html" title="OpenHAB::Core::Things::ChannelGroupType (class)">ChannelGroupType</a></span>
+      
+        &lt; AbstractDescriptionType
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/ChannelGroupTypeUID.html" title="OpenHAB::Core::Things::ChannelGroupTypeUID (class)">ChannelGroupTypeUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/ChannelGroupUID.html" title="OpenHAB::Core::Things::ChannelGroupUID (class)">ChannelGroupUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/ChannelType.html" title="OpenHAB::Core::Things::ChannelType (class)">ChannelType</a></span>
+      
+        &lt; AbstractDescriptionType
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/ChannelTypeUID.html" title="OpenHAB::Core::Things::ChannelTypeUID (class)">ChannelTypeUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/ChannelUID.html" title="OpenHAB::Core::Things::ChannelUID (class)">ChannelUID</a></span>
+      
+        &lt; UID
       
       
     </span>
@@ -1347,6 +1910,33 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   </li>
 
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="../../Core/Things/Thing/Properties.html" title="OpenHAB::Core::Things::Thing::Properties (class)">Properties</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -1369,7 +1959,57 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
 
   
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/ThingType.html" title="OpenHAB::Core::Things::ThingType (class)">ThingType</a></span>
+      
+        &lt; AbstractDescriptionType
+      
+      
+    </span>
+    
+    
+  </li>
+
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/ThingTypeUID.html" title="OpenHAB::Core::Things::ThingTypeUID (class)">ThingTypeUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/ThingUID.html" title="OpenHAB::Core::Things::ThingUID (class)">ThingUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Things/UID.html" title="OpenHAB::Core::Things::UID (class)">UID</a></span>
+      
+        &lt; AbstractUID
+      
+      
+    </span>
+    
+    
+  </li>
+
 
         
       </ul>
@@ -1408,6 +2048,17 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   <li class="">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Types/Command.html" title="OpenHAB::Core::Types::Command (module)">Command</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Types/CommandDescription.html" title="OpenHAB::Core::Types::CommandDescription (module)">CommandDescription</a></span>
       
       
     </span>
@@ -1622,6 +2273,19 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Types/StateDescription.html" title="OpenHAB::Core::Types::StateDescription (class)">StateDescription</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Types/StopMoveType.html" title="OpenHAB::Core::Types::StopMoveType (class)">StopMoveType</a></span>
       
         &lt; Object
@@ -1635,7 +2299,33 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Types/StringListType.html" title="OpenHAB::Core::Types::StringListType (class)">StringListType</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Types/StringType.html" title="OpenHAB::Core::Types::StringType (class)">StringType</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../Core/Types/TimeSeries.html" title="OpenHAB::Core::Types::TimeSeries (class)">TimeSeries</a></span>
       
         &lt; Object
       
@@ -1703,6 +2393,9 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   
   
+  
+  
+  
 
         
       </ul>
@@ -1749,6 +2442,38 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   <li class="collapsed">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../../CoreExt/Gems.html" title="OpenHAB::CoreExt::Gems (module)">Gems</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../CoreExt/Gems/MethodSourceScriptPatch.html" title="OpenHAB::CoreExt::Gems::MethodSourceScriptPatch (module)">MethodSourceScriptPatch</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../../CoreExt/Java.html" title="OpenHAB::CoreExt::Java (module)">Java</a></span>
       
       
@@ -1780,6 +2505,19 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../CoreExt/Java/Duration.html" title="OpenHAB::CoreExt::Java::Duration (class)">Duration</a></span>
       
         &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../../CoreExt/Java/Instant.html" title="OpenHAB::CoreExt::Java::Instant (class)">Instant</a></span>
+      
+        &lt; java.lang.Object
       
       
     </span>
@@ -1947,6 +2685,17 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
     
   </li>
 
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../../CoreExt/TimePredicates.html" title="OpenHAB::CoreExt::TimePredicates (module)">TimePredicates</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
 
         
       </ul>
@@ -1969,6 +2718,40 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
         
         
   
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../ConfigDescription.html" title="OpenHAB::DSL::ConfigDescription (module)">ConfigDescription</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../ConfigDescription/Builder.html" title="OpenHAB::DSL::ConfigDescription::Builder (class)">Builder</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
   
   <li class="">
     <span class="sidebar-link">
@@ -2112,6 +2895,17 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   </li>
 
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Items/Tags.html" title="OpenHAB::DSL::Items::Tags (module)">Tags</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
   <li class="collapsed">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Items/TimedCommand.html" title="OpenHAB::DSL::Items::TimedCommand (module)">TimedCommand</a></span>
@@ -2214,6 +3008,326 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   </li>
 
   
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../Sitemaps.html" title="OpenHAB::DSL::Sitemaps (module)">Sitemaps</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/Builder.html" title="OpenHAB::DSL::Sitemaps::Builder (class)">Builder</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/ButtonBuilder.html" title="OpenHAB::DSL::Sitemaps::ButtonBuilder (class)">ButtonBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/ButtongridBuilder.html" title="OpenHAB::DSL::Sitemaps::ButtongridBuilder (class)">ButtongridBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/ChartBuilder.html" title="OpenHAB::DSL::Sitemaps::ChartBuilder (class)">ChartBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/ColorpickerBuilder.html" title="OpenHAB::DSL::Sitemaps::ColorpickerBuilder (class)">ColorpickerBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/ColortemperaturepickerBuilder.html" title="OpenHAB::DSL::Sitemaps::ColortemperaturepickerBuilder (class)">ColortemperaturepickerBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/DefaultBuilder.html" title="OpenHAB::DSL::Sitemaps::DefaultBuilder (class)">DefaultBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/FrameBuilder.html" title="OpenHAB::DSL::Sitemaps::FrameBuilder (class)">FrameBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/GroupBuilder.html" title="OpenHAB::DSL::Sitemaps::GroupBuilder (class)">GroupBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/ImageBuilder.html" title="OpenHAB::DSL::Sitemaps::ImageBuilder (class)">ImageBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/InputBuilder.html" title="OpenHAB::DSL::Sitemaps::InputBuilder (class)">InputBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/LinkableWidgetBuilder.html" title="OpenHAB::DSL::Sitemaps::LinkableWidgetBuilder (class)">LinkableWidgetBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/MapviewBuilder.html" title="OpenHAB::DSL::Sitemaps::MapviewBuilder (class)">MapviewBuilder</a></span>
+      
+        &lt; DefaultBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/NestedSitemapBuilder.html" title="OpenHAB::DSL::Sitemaps::NestedSitemapBuilder (class)">NestedSitemapBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/SelectionBuilder.html" title="OpenHAB::DSL::Sitemaps::SelectionBuilder (class)">SelectionBuilder</a></span>
+      
+        &lt; SwitchBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/SetpointBuilder.html" title="OpenHAB::DSL::Sitemaps::SetpointBuilder (class)">SetpointBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/SitemapBuilder.html" title="OpenHAB::DSL::Sitemaps::SitemapBuilder (class)">SitemapBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/SliderBuilder.html" title="OpenHAB::DSL::Sitemaps::SliderBuilder (class)">SliderBuilder</a></span>
+      
+        &lt; SetpointBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/SwitchBuilder.html" title="OpenHAB::DSL::Sitemaps::SwitchBuilder (class)">SwitchBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/TextBuilder.html" title="OpenHAB::DSL::Sitemaps::TextBuilder (class)">TextBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/VideoBuilder.html" title="OpenHAB::DSL::Sitemaps::VideoBuilder (class)">VideoBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/WebviewBuilder.html" title="OpenHAB::DSL::Sitemaps::WebviewBuilder (class)">WebviewBuilder</a></span>
+      
+        &lt; DefaultBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../Sitemaps/WidgetBuilder.html" title="OpenHAB::DSL::Sitemaps::WidgetBuilder (class)">WidgetBuilder</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+  
   <li class="">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../Things.html" title="OpenHAB::DSL::Things (module)">Things</a></span>
@@ -2299,6 +3413,13 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
     
   </li>
 
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -2478,6 +3599,7 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   
   
+  
   <li class="">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-0" href="../../../Date.html" title="Date (class)">Date</a></span>
@@ -2533,6 +3655,7 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
     
   </li>
 
+  
   
   
   
@@ -2630,6 +3753,7 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
   
   
   
+  
   <li class="">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-0" href="../../../Symbol.html" title="Symbol (class)">Symbol</a></span>
@@ -2655,6 +3779,7 @@ or even later based on a rule executing. - Documentation for openhab-scripting J
     
   </li>
 
+  
   
   
   
@@ -2727,19 +3852,19 @@ or even later based on a rule executing.</p>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
-        <p class="example_title"><div class='inline'><p>Create a Thing from the Astro Binding</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Create a Thing from the Astro Binding</p>
+</div></h5>
       
       <pre class="example code"><code>things.build <span class="keyword">do</span>
   thing <span class="string"><span class="delimiter">&quot;</span><span class="content">astro:sun:home</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">Astro Sun Data</span><span class="delimiter">&quot;</span></span>, <span class="key">config</span>: { <span class="string"><span class="delimiter">&quot;</span><span class="content">geolocation</span><span class="delimiter">&quot;</span></span> =&gt; <span class="string"><span class="delimiter">&quot;</span><span class="content">0,0</span><span class="delimiter">&quot;</span></span> }
 <span class="keyword">end</span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Create a Thing with Channels</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Create a Thing with Channels</p>
+</div></h5>
       
       <pre class="example code"><code>thing_config = {
   <span class="key">availabilityTopic</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">my-switch/status</span><span class="delimiter">&quot;</span></span>,
@@ -2747,13 +3872,49 @@ or even later based on a rule executing.</p>
   <span class="key">payloadNotAvailable</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">offline</span><span class="delimiter">&quot;</span></span>
 }
 things.build <span class="keyword">do</span>
-  thing(<span class="string"><span class="delimiter">&quot;</span><span class="content">mqtt:topic:my-switch</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">My Switch</span><span class="delimiter">&quot;</span></span>, <span class="key">bridge</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">mqtt:bridge:mosquitto</span><span class="delimiter">&quot;</span></span>, <span class="key">config</span>: thing_config) <span class="keyword">do</span>
+  thing(<span class="string"><span class="delimiter">&quot;</span><span class="content">mqtt:topic:my-switch</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">My Switch</span><span class="delimiter">&quot;</span></span>, <span class="key">bridge</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">mqtt:broker:mosquitto</span><span class="delimiter">&quot;</span></span>, <span class="key">config</span>: thing_config) <span class="keyword">do</span>
     channel(<span class="string"><span class="delimiter">&quot;</span><span class="content">switch1</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">switch</span><span class="delimiter">&quot;</span></span>, <span class="key">config</span>: {
-      <span class="key">stateTopic</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">stat/my-switch/switch1/state</span><span class="delimiter">&quot;</span></span>, commandTopic=<span class="string"><span class="delimiter">&quot;</span><span class="content">cmnd/my-switch/switch1/command</span><span class="delimiter">&quot;</span></span>
+      <span class="key">stateTopic</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">stat/my-switch/switch1/state</span><span class="delimiter">&quot;</span></span>, <span class="key">commandTopic</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">cmnd/my-switch/switch1/command</span><span class="delimiter">&quot;</span></span>
     })
     channel(<span class="string"><span class="delimiter">&quot;</span><span class="content">button1</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">string</span><span class="delimiter">&quot;</span></span>, <span class="key">config</span>: {
-      <span class="key">stateTopic</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">stat/my-switch/button1/state</span><span class="delimiter">&quot;</span></span>, commandTopic=<span class="string"><span class="delimiter">&quot;</span><span class="content">cmnd/my-switch/button1/command</span><span class="delimiter">&quot;</span></span>
+      <span class="key">stateTopic</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">stat/my-switch/button1/state</span><span class="delimiter">&quot;</span></span>, <span class="key">commandTopic</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">cmnd/my-switch/button1/command</span><span class="delimiter">&quot;</span></span>
     })
+  <span class="keyword">end</span>
+<span class="keyword">end</span></code></pre>
+    
+      
+        <h5 class="example_title"><div class='inline'><p>Create a Thing within a Bridge</p>
+</div></h5>
+      
+      <pre class="example code"><code>things.build <span class="keyword">do</span>
+  bridge <span class="string"><span class="delimiter">&quot;</span><span class="content">mqtt:broker:mosquitto</span><span class="delimiter">&quot;</span></span>, <span class="key">config</span>: { <span class="key">host</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">127.0.0.1</span><span class="delimiter">&quot;</span></span>, <span class="key">enableDiscovery</span>: <span class="predefined-constant">false</span> } <span class="keyword">do</span>
+    thing <span class="string"><span class="delimiter">&quot;</span><span class="content">mqtt:topic:window1</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">My Window Sensor</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
+      channel <span class="string"><span class="delimiter">&quot;</span><span class="content">contact1</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">contact</span><span class="delimiter">&quot;</span></span>, <span class="key">config</span>: {
+        <span class="key">stateTopic</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">zigbee2mqtt/window1/contact</span><span class="delimiter">&quot;</span></span>,
+        <span class="key">on</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">false</span><span class="delimiter">&quot;</span></span>,
+        <span class="key">off</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">true</span><span class="delimiter">&quot;</span></span>
+      }
+    <span class="keyword">end</span>
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+items.build <span class="keyword">do</span>
+  contact_item <span class="constant">Window1_Contact</span>, <span class="key">channel</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">mqtt:topic:window1:contact1</span><span class="delimiter">&quot;</span></span>
+<span class="keyword">end</span></code></pre>
+    
+      
+        <h5 class="example_title"><div class='inline'><p>Create a Thing separately from the Bridge</p>
+</div></h5>
+      
+      <pre class="example code"><code>things.build <span class="keyword">do</span>
+  bridge = bridge <span class="string"><span class="delimiter">&quot;</span><span class="content">mqtt:broker:mosquitto</span><span class="delimiter">&quot;</span></span>, <span class="key">config</span>: { <span class="key">host</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">127.0.0.1</span><span class="delimiter">&quot;</span></span>, <span class="key">enableDiscovery</span>: <span class="predefined-constant">false</span> }
+
+  thing <span class="string"><span class="delimiter">&quot;</span><span class="content">mqtt:topic:window1</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">My Window Sensor</span><span class="delimiter">&quot;</span></span>, <span class="key">bridge</span>: bridge <span class="keyword">do</span>
+    channel <span class="string"><span class="delimiter">&quot;</span><span class="content">contact1</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">contact</span><span class="delimiter">&quot;</span></span>, <span class="key">config</span>: {
+      <span class="key">stateTopic</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">zigbee2mqtt/window1/contact</span><span class="delimiter">&quot;</span></span>,
+      <span class="key">on</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">false</span><span class="delimiter">&quot;</span></span>,
+      <span class="key">off</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">true</span><span class="delimiter">&quot;</span></span>
+    }
   <span class="keyword">end</span>
 <span class="keyword">end</span></code></pre>
     
@@ -2823,7 +3984,7 @@ things.build <span class="keyword">do</span>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#bridge-instance_method" title="#bridge (instance method)">#<strong>bridge</strong>(*args, **kwargs, &amp;block)  &#x21d2; Object </a>
+      <a href="#bridge-instance_method" title="#bridge (instance method)">#<strong>bridge</strong>  &#x21d2; Object </a>
     
 
     
@@ -2846,7 +4007,7 @@ things.build <span class="keyword">do</span>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(provider)  &#x21d2; Builder </a>
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(provider, update: false)  &#x21d2; Builder </a>
     
 
     
@@ -2871,7 +4032,7 @@ things.build <span class="keyword">do</span>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#thing-instance_method" title="#thing (instance method)">#<strong>thing</strong>(*args, **kwargs, &amp;block)  &#x21d2; Object </a>
+      <a href="#thing-instance_method" title="#thing (instance method)">#<strong>thing</strong>  &#x21d2; Object </a>
     
 
     
@@ -2901,7 +4062,7 @@ things.build <span class="keyword">do</span>
     <div class="method_details first">
   <h3 class="signature first" id="initialize-instance_method">
   
-    #<strong>initialize</strong>(provider)  &#x21d2; <tt><span class='object_link'><a href="" title="OpenHAB::DSL::Things::Builder (class)">Builder</a></span></tt> 
+    #<strong>initialize</strong>(provider, update: false)  &#x21d2; <tt><span class='object_link'><a href="" title="OpenHAB::DSL::Things::Builder (class)">Builder</a></span></tt> 
   
 
   
@@ -2923,15 +4084,17 @@ things.build <span class="keyword">do</span>
       <pre class="lines">
 
 
-43
-44
-45</pre>
+73
+74
+75
+76</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl/things/builder.rb', line 43</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl/things/builder.rb', line 73</span>
 
-<span class="keyword">def</span> <span class="function">initialize</span>(provider)
+<span class="keyword">def</span> <span class="function">initialize</span>(provider, <span class="key">update</span>: <span class="predefined-constant">false</span>)
   <span class="instance-variable">@provider</span> = <span class="constant">Core</span>::<span class="constant">Things</span>::<span class="constant">Provider</span>.current(provider)
+  <span class="instance-variable">@update</span> = update
 <span class="keyword">end</span></pre>
     </td>
   </tr>
@@ -2982,12 +4145,12 @@ things.build <span class="keyword">do</span>
       <pre class="lines">
 
 
-41
-42
-43</pre>
+71
+72
+73</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl/things/builder.rb', line 41</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl/things/builder.rb', line 71</span>
 
 <span class="keyword">def</span> <span class="function">provider</span>
   <span class="instance-variable">@provider</span>
@@ -3007,7 +4170,7 @@ things.build <span class="keyword">do</span>
       <div class="method_details first">
   <h3 class="signature first" id="bridge-instance_method">
   
-    #<strong>bridge</strong>(*args, **kwargs, &amp;block)  &#x21d2; <tt><span class='object_link'>Object</span></tt> 
+    #<strong>bridge</strong>  &#x21d2; <tt><span class='object_link'>Object</span></tt> 
   
 
   
@@ -3026,7 +4189,7 @@ things.build <span class="keyword">do</span>
   <p class="tag_title">See Also:</p>
   <ul class="see">
     
-      <li><span class='object_link'><a href="ThingBuilder.html#initialize-instance_method" title="OpenHAB::DSL::Things::ThingBuilder#initialize (method)">ThingBuilder#initialize</a></span></li>
+      <li><span class='object_link'><a href="BridgeBuilder.html#initialize-instance_method" title="OpenHAB::DSL::Things::BridgeBuilder#initialize (method)">OpenHAB::DSL::Things::BridgeBuilder#initialize</a></span></li>
     
   </ul>
 
@@ -3036,15 +4199,15 @@ things.build <span class="keyword">do</span>
       <pre class="lines">
 
 
-49
-50
-51</pre>
+80
+81
+82</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl/things/builder.rb', line 49</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl/things/builder.rb', line 80</span>
 
-<span class="keyword">def</span> <span class="function">bridge</span>(*args, **kwargs, &amp;block)
-  build(<span class="constant">BridgeBuilder</span>, *args, **kwargs, &amp;block)
+<span class="keyword">def</span> <span class="function">bridge</span>(...)
+  build(<span class="constant">BridgeBuilder</span>, ...)
 <span class="keyword">end</span></pre>
     </td>
   </tr>
@@ -3054,7 +4217,7 @@ things.build <span class="keyword">do</span>
       <div class="method_details ">
   <h3 class="signature " id="thing-instance_method">
   
-    #<strong>thing</strong>(*args, **kwargs, &amp;block)  &#x21d2; <tt><span class='object_link'>Object</span></tt> 
+    #<strong>thing</strong>  &#x21d2; <tt><span class='object_link'>Object</span></tt> 
   
 
   
@@ -3083,15 +4246,15 @@ things.build <span class="keyword">do</span>
       <pre class="lines">
 
 
-55
-56
-57</pre>
+86
+87
+88</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl/things/builder.rb', line 55</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl/things/builder.rb', line 86</span>
 
-<span class="keyword">def</span> <span class="function">thing</span>(*args, **kwargs, &amp;block)
-  build(<span class="constant">ThingBuilder</span>, *args, **kwargs, &amp;block)
+<span class="keyword">def</span> <span class="function">thing</span>(...)
+  build(<span class="constant">ThingBuilder</span>, ...)
 <span class="keyword">end</span></pre>
     </td>
   </tr>
@@ -3103,9 +4266,9 @@ things.build <span class="keyword">do</span>
 </div>
 
         <footer>
-  Generated on Wed Apr 19 17:44:55 2023 by
+  Generated on Fri Nov 20 00:11:43 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.28 (ruby-3.1.3).
+  0.9.37 (ruby-3.4.13).
 </footer>
 
       </main>

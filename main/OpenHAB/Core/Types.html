@@ -33,6 +33,7 @@
   <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
 
 
+    <script type="text/javascript" charset="utf-8" src="https://openhab.github.io/openhab-jruby/js/versions.js"></script>
     <meta property="og:description" name="description" content="Contains the core types that openHAB uses as States for items, and
 Commands to be sent to control them.
 
@@ -90,11 +91,20 @@ Some types have additional useful methods. - Documentation for openhab-scripting
         </nav>
         <div class="page-versions">
   <ul class="version-switcher">
-    <li><a href="/openhab-jruby/5.0" class="version-button stable">Stable <small>(5.0)</small></a></li>
+    <li><a href="/openhab-jruby/5.52" class="version-button stable">Stable <small>(5.52)</small></a></li>
     <li><a href="/openhab-jruby/main" class="version-button main">Latest <small>(main)</small></a></li>
   </ul>
-  
-  
+  <div class="archived-versions">
+    <div class="dropdown-wrapper">
+      <a class="dropdown-title">
+        <span class="title">Archived</span>
+        <span class="arrow down"></span>
+      </a>
+      <ul class="nav-dropdown" id="version-dropdown">
+        
+      </ul>
+    </div>
+  </div>
 </div>
 
 
@@ -292,6 +302,19 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Actions/Notification.html" title="OpenHAB::Core::Actions::Notification (class)">Notification</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Actions/Ping.html" title="OpenHAB::Core::Actions::Ping (class)">Ping</a></span>
       
         &lt; Object
@@ -332,6 +355,19 @@ Some types have additional useful methods. - Documentation for openhab-scripting
 
         
       </ul>
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="Configuration.html" title="OpenHAB::Core::Configuration (class)">Configuration</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
     
   </li>
 
@@ -385,6 +421,17 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="EmulateHash.html" title="OpenHAB::Core::EmulateHash (module)">EmulateHash</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="EntityLookup.html" title="OpenHAB::Core::EntityLookup (module)">EntityLookup</a></span>
       
       
@@ -424,6 +471,19 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Events/AbstractItemChannelLinkRegistryEvent.html" title="OpenHAB::Core::Events::AbstractItemChannelLinkRegistryEvent (class)">AbstractItemChannelLinkRegistryEvent</a></span>
+      
+        &lt; AbstractEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Events/AbstractItemRegistryEvent.html" title="OpenHAB::Core::Events::AbstractItemRegistryEvent (class)">AbstractItemRegistryEvent</a></span>
       
         &lt; AbstractEvent
@@ -450,9 +510,48 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Events/ChannelTriggeredEvent.html" title="OpenHAB::Core::Events::ChannelTriggeredEvent (class)">ChannelTriggeredEvent</a></span>
+      
+        &lt; AbstractEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Events/ItemAddedEvent.html" title="OpenHAB::Core::Events::ItemAddedEvent (class)">ItemAddedEvent</a></span>
       
         &lt; AbstractItemRegistryEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Events/ItemChannelLinkAddedEvent.html" title="OpenHAB::Core::Events::ItemChannelLinkAddedEvent (class)">ItemChannelLinkAddedEvent</a></span>
+      
+        &lt; AbstractItemChannelLinkRegistryEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Events/ItemChannelLinkRemovedEvent.html" title="OpenHAB::Core::Events::ItemChannelLinkRemovedEvent (class)">ItemChannelLinkRemovedEvent</a></span>
+      
+        &lt; AbstractItemChannelLinkRegistryEvent
       
       
     </span>
@@ -486,6 +585,7 @@ Some types have additional useful methods. - Documentation for openhab-scripting
     
   </li>
 
+  
   
   <li class="">
     <span class="sidebar-link">
@@ -539,9 +639,102 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Events/ItemStateUpdatedEvent.html" title="OpenHAB::Core::Events::ItemStateUpdatedEvent (class)">ItemStateUpdatedEvent</a></span>
+      
+        &lt; ItemEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Events/ItemTimeSeriesUpdatedEvent.html" title="OpenHAB::Core::Events::ItemTimeSeriesUpdatedEvent (class)">ItemTimeSeriesUpdatedEvent</a></span>
+      
+        &lt; ItemEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Events/ItemUpdatedEvent.html" title="OpenHAB::Core::Events::ItemUpdatedEvent (class)">ItemUpdatedEvent</a></span>
       
         &lt; AbstractItemRegistryEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Events/Source.html" title="OpenHAB::Core::Events::Source (class)">Source</a></span>
+      
+        &lt; Delegator
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  
+  
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Events/Source/Component.html" title="OpenHAB::Core::Events::Source::Component (class)">Component</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Events/StartlevelEvent.html" title="OpenHAB::Core::Events::StartlevelEvent (class)">StartlevelEvent</a></span>
+      
+        &lt; AbstractEvent
       
       
     </span>
@@ -614,6 +807,107 @@ Some types have additional useful methods. - Documentation for openhab-scripting
     
   </li>
 
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Events/TimerEvent.html" title="OpenHAB::Core::Events::TimerEvent (class)">TimerEvent</a></span>
+      
+        &lt; AbstractEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="IO.html" title="OpenHAB::Core::IO (module)">IO</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="IO/Transport.html" title="OpenHAB::Core::IO::Transport (module)">Transport</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="IO/Transport/Serial.html" title="OpenHAB::Core::IO::Transport::Serial (module)">Serial</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-5" href="IO/Transport/Serial/SerialPort.html" title="OpenHAB::Core::IO::Transport::Serial::SerialPort (class)">SerialPort</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-5" href="IO/Transport/Serial/SerialPortManager.html" title="OpenHAB::Core::IO::Transport::Serial::SerialPortManager (module)">SerialPortManager</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+
+        
+      </ul>
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
 
         
       </ul>
@@ -635,6 +929,19 @@ Some types have additional useful methods. - Documentation for openhab-scripting
       <ul>
         
         
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Items/CallItem.html" title="OpenHAB::Core::Items::CallItem (class)">CallItem</a></span>
+      
+        &lt; GenericItem
+      
+      
+    </span>
+    
+    
+  </li>
+
   
   <li class="">
     <span class="sidebar-link">
@@ -701,6 +1008,17 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   </li>
 
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Items/GroupFunction.html" title="OpenHAB::Core::Items::GroupFunction (module)">GroupFunction</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
   <li class="collapsed">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Items/GroupItem.html" title="OpenHAB::Core::Items::GroupItem (class)">GroupItem</a></span>
@@ -735,6 +1053,7 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   
   
+  
 
         
       </ul>
@@ -758,6 +1077,19 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   <li class="">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Items/Item.html" title="OpenHAB::Core::Items::Item (module)">Item</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Items/ItemChannelLinks.html" title="OpenHAB::Core::Items::ItemChannelLinks (class)">ItemChannelLinks</a></span>
+      
+        &lt; SimpleDelegator
       
       
     </span>
@@ -878,9 +1210,10 @@ Some types have additional useful methods. - Documentation for openhab-scripting
         
         
   
+  
   <li class="">
     <span class="sidebar-link">
-      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Items/Persistence/HistoricState.html" title="OpenHAB::Core::Items::Persistence::HistoricState (class)">HistoricState</a></span>
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Items/Persistence/PersistedState.html" title="OpenHAB::Core::Items::Persistence::PersistedState (class)">PersistedState</a></span>
       
         &lt; SimpleDelegator
       
@@ -890,6 +1223,38 @@ Some types have additional useful methods. - Documentation for openhab-scripting
     
   </li>
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -997,10 +1362,11 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   
   
-  
   <li class="">
     <span class="sidebar-link">
-      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Items/Semantics/TagClassMethods.html" title="OpenHAB::Core::Items::Semantics::TagClassMethods (module)">TagClassMethods</a></span>
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Items/Semantics/Provider.html" title="OpenHAB::Core::Items::Semantics::Provider (class)">Provider</a></span>
+      
+        &lt; Provider
       
       
     </span>
@@ -1008,6 +1374,18 @@ Some types have additional useful methods. - Documentation for openhab-scripting
     
   </li>
 
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Items/Semantics/SemanticTag.html" title="OpenHAB::Core::Items::Semantics::SemanticTag (module)">SemanticTag</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
   
   
   
@@ -1068,18 +1446,6 @@ Some types have additional useful methods. - Documentation for openhab-scripting
     
   </li>
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
 
         
@@ -1180,6 +1546,19 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Rules/TaggedArray.html" title="OpenHAB::Core::Rules::TaggedArray (class)">TaggedArray</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
   
 
         
@@ -1201,6 +1580,86 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   <li class="collapsed">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="Sitemaps.html" title="OpenHAB::Core::Sitemaps (module)">Sitemaps</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Sitemaps/LinkableWidget.html" title="OpenHAB::Core::Sitemaps::LinkableWidget (module)">LinkableWidget</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Sitemaps/Provider.html" title="OpenHAB::Core::Sitemaps::Provider (class)">Provider</a></span>
+      
+        &lt; Provider
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Sitemaps/Registry.html" title="OpenHAB::Core::Sitemaps::Registry (class)">Registry</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Sitemaps/Sitemap.html" title="OpenHAB::Core::Sitemaps::Sitemap (module)">Sitemap</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Sitemaps/Widget.html" title="OpenHAB::Core::Sitemaps::Widget (module)">Widget</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="Things.html" title="OpenHAB::Core::Things (module)">Things</a></span>
       
       
@@ -1213,6 +1672,19 @@ Some types have additional useful methods. - Documentation for openhab-scripting
       <ul>
         
         
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/AbstractDescriptionType.html" title="OpenHAB::Core::Things::AbstractDescriptionType (class)">AbstractDescriptionType</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
   
   <li class="">
     <span class="sidebar-link">
@@ -1229,9 +1701,100 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   <li class="">
     <span class="sidebar-link">
-      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/ChannelUID.html" title="OpenHAB::Core::Things::ChannelUID (class)">ChannelUID</a></span>
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/ChannelDefinition.html" title="OpenHAB::Core::Things::ChannelDefinition (class)">ChannelDefinition</a></span>
       
         &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/ChannelGroupDefinition.html" title="OpenHAB::Core::Things::ChannelGroupDefinition (class)">ChannelGroupDefinition</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/ChannelGroupType.html" title="OpenHAB::Core::Things::ChannelGroupType (class)">ChannelGroupType</a></span>
+      
+        &lt; AbstractDescriptionType
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/ChannelGroupTypeUID.html" title="OpenHAB::Core::Things::ChannelGroupTypeUID (class)">ChannelGroupTypeUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/ChannelGroupUID.html" title="OpenHAB::Core::Things::ChannelGroupUID (class)">ChannelGroupUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/ChannelType.html" title="OpenHAB::Core::Things::ChannelType (class)">ChannelType</a></span>
+      
+        &lt; AbstractDescriptionType
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/ChannelTypeUID.html" title="OpenHAB::Core::Things::ChannelTypeUID (class)">ChannelTypeUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/ChannelUID.html" title="OpenHAB::Core::Things::ChannelUID (class)">ChannelUID</a></span>
+      
+        &lt; UID
       
       
     </span>
@@ -1352,6 +1915,33 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   </li>
 
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Things/Thing/Properties.html" title="OpenHAB::Core::Things::Thing::Properties (class)">Properties</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -1374,7 +1964,57 @@ Some types have additional useful methods. - Documentation for openhab-scripting
 
   
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/ThingType.html" title="OpenHAB::Core::Things::ThingType (class)">ThingType</a></span>
+      
+        &lt; AbstractDescriptionType
+      
+      
+    </span>
+    
+    
+  </li>
+
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/ThingTypeUID.html" title="OpenHAB::Core::Things::ThingTypeUID (class)">ThingTypeUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/ThingUID.html" title="OpenHAB::Core::Things::ThingUID (class)">ThingUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Things/UID.html" title="OpenHAB::Core::Things::UID (class)">UID</a></span>
+      
+        &lt; AbstractUID
+      
+      
+    </span>
+    
+    
+  </li>
+
 
         
       </ul>
@@ -1413,6 +2053,17 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   <li class="">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Types/Command.html" title="OpenHAB::Core::Types::Command (module)">Command</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Types/CommandDescription.html" title="OpenHAB::Core::Types::CommandDescription (module)">CommandDescription</a></span>
       
       
     </span>
@@ -1627,6 +2278,19 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Types/StateDescription.html" title="OpenHAB::Core::Types::StateDescription (class)">StateDescription</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Types/StopMoveType.html" title="OpenHAB::Core::Types::StopMoveType (class)">StopMoveType</a></span>
       
         &lt; Object
@@ -1640,7 +2304,33 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Types/StringListType.html" title="OpenHAB::Core::Types::StringListType (class)">StringListType</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Types/StringType.html" title="OpenHAB::Core::Types::StringType (class)">StringType</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Types/TimeSeries.html" title="OpenHAB::Core::Types::TimeSeries (class)">TimeSeries</a></span>
       
         &lt; Object
       
@@ -1708,6 +2398,9 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   
   
+  
+  
+  
 
         
       </ul>
@@ -1754,6 +2447,38 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   <li class="collapsed">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../CoreExt/Gems.html" title="OpenHAB::CoreExt::Gems (module)">Gems</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../CoreExt/Gems/MethodSourceScriptPatch.html" title="OpenHAB::CoreExt::Gems::MethodSourceScriptPatch (module)">MethodSourceScriptPatch</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../CoreExt/Java.html" title="OpenHAB::CoreExt::Java (module)">Java</a></span>
       
       
@@ -1785,6 +2510,19 @@ Some types have additional useful methods. - Documentation for openhab-scripting
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../CoreExt/Java/Duration.html" title="OpenHAB::CoreExt::Java::Duration (class)">Duration</a></span>
       
         &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../CoreExt/Java/Instant.html" title="OpenHAB::CoreExt::Java::Instant (class)">Instant</a></span>
+      
+        &lt; java.lang.Object
       
       
     </span>
@@ -1952,6 +2690,17 @@ Some types have additional useful methods. - Documentation for openhab-scripting
     
   </li>
 
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../CoreExt/TimePredicates.html" title="OpenHAB::CoreExt::TimePredicates (module)">TimePredicates</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
 
         
       </ul>
@@ -1974,6 +2723,40 @@ Some types have additional useful methods. - Documentation for openhab-scripting
         
         
   
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../DSL/ConfigDescription.html" title="OpenHAB::DSL::ConfigDescription (module)">ConfigDescription</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/ConfigDescription/Builder.html" title="OpenHAB::DSL::ConfigDescription::Builder (class)">Builder</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
   
   <li class="">
     <span class="sidebar-link">
@@ -2117,6 +2900,17 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   </li>
 
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Items/Tags.html" title="OpenHAB::DSL::Items::Tags (module)">Tags</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
   <li class="collapsed">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Items/TimedCommand.html" title="OpenHAB::DSL::Items::TimedCommand (module)">TimedCommand</a></span>
@@ -2221,6 +3015,326 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   <li class="collapsed">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../DSL/Sitemaps.html" title="OpenHAB::DSL::Sitemaps (module)">Sitemaps</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/Builder.html" title="OpenHAB::DSL::Sitemaps::Builder (class)">Builder</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/ButtonBuilder.html" title="OpenHAB::DSL::Sitemaps::ButtonBuilder (class)">ButtonBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/ButtongridBuilder.html" title="OpenHAB::DSL::Sitemaps::ButtongridBuilder (class)">ButtongridBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/ChartBuilder.html" title="OpenHAB::DSL::Sitemaps::ChartBuilder (class)">ChartBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/ColorpickerBuilder.html" title="OpenHAB::DSL::Sitemaps::ColorpickerBuilder (class)">ColorpickerBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/ColortemperaturepickerBuilder.html" title="OpenHAB::DSL::Sitemaps::ColortemperaturepickerBuilder (class)">ColortemperaturepickerBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/DefaultBuilder.html" title="OpenHAB::DSL::Sitemaps::DefaultBuilder (class)">DefaultBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/FrameBuilder.html" title="OpenHAB::DSL::Sitemaps::FrameBuilder (class)">FrameBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/GroupBuilder.html" title="OpenHAB::DSL::Sitemaps::GroupBuilder (class)">GroupBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/ImageBuilder.html" title="OpenHAB::DSL::Sitemaps::ImageBuilder (class)">ImageBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/InputBuilder.html" title="OpenHAB::DSL::Sitemaps::InputBuilder (class)">InputBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/LinkableWidgetBuilder.html" title="OpenHAB::DSL::Sitemaps::LinkableWidgetBuilder (class)">LinkableWidgetBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/MapviewBuilder.html" title="OpenHAB::DSL::Sitemaps::MapviewBuilder (class)">MapviewBuilder</a></span>
+      
+        &lt; DefaultBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/NestedSitemapBuilder.html" title="OpenHAB::DSL::Sitemaps::NestedSitemapBuilder (class)">NestedSitemapBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/SelectionBuilder.html" title="OpenHAB::DSL::Sitemaps::SelectionBuilder (class)">SelectionBuilder</a></span>
+      
+        &lt; SwitchBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/SetpointBuilder.html" title="OpenHAB::DSL::Sitemaps::SetpointBuilder (class)">SetpointBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/SitemapBuilder.html" title="OpenHAB::DSL::Sitemaps::SitemapBuilder (class)">SitemapBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/SliderBuilder.html" title="OpenHAB::DSL::Sitemaps::SliderBuilder (class)">SliderBuilder</a></span>
+      
+        &lt; SetpointBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/SwitchBuilder.html" title="OpenHAB::DSL::Sitemaps::SwitchBuilder (class)">SwitchBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/TextBuilder.html" title="OpenHAB::DSL::Sitemaps::TextBuilder (class)">TextBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/VideoBuilder.html" title="OpenHAB::DSL::Sitemaps::VideoBuilder (class)">VideoBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/WebviewBuilder.html" title="OpenHAB::DSL::Sitemaps::WebviewBuilder (class)">WebviewBuilder</a></span>
+      
+        &lt; DefaultBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="../DSL/Sitemaps/WidgetBuilder.html" title="OpenHAB::DSL::Sitemaps::WidgetBuilder (class)">WidgetBuilder</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="../DSL/Things.html" title="OpenHAB::DSL::Things (module)">Things</a></span>
       
       
@@ -2304,6 +3418,13 @@ Some types have additional useful methods. - Documentation for openhab-scripting
     
   </li>
 
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -2483,6 +3604,7 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   
   
+  
   <li class="">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-0" href="../../Date.html" title="Date (class)">Date</a></span>
@@ -2538,6 +3660,7 @@ Some types have additional useful methods. - Documentation for openhab-scripting
     
   </li>
 
+  
   
   
   
@@ -2635,6 +3758,7 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   
   
   
+  
   <li class="">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-0" href="../../Symbol.html" title="Symbol (class)">Symbol</a></span>
@@ -2660,6 +3784,7 @@ Some types have additional useful methods. - Documentation for openhab-scripting
     
   </li>
 
+  
   
   
   
@@ -2700,7 +3825,7 @@ Some types have additional useful methods. - Documentation for openhab-scripting
   <dl>
     <dt>Defined in:</dt>
     <dd>lib/openhab/core/types.rb<span class="defines">,<br />
-  lib/openhab/core/types/type.rb,<br /> lib/openhab/core/types/hsb_type.rb,<br /> lib/openhab/core/types/raw_type.rb,<br /> lib/openhab/core/types/point_type.rb,<br /> lib/openhab/core/types/on_off_type.rb,<br /> lib/openhab/core/types/string_type.rb,<br /> lib/openhab/core/types/un_def_type.rb,<br /> lib/openhab/core/types/decimal_type.rb,<br /> lib/openhab/core/types/numeric_type.rb,<br /> lib/openhab/core/types/percent_type.rb,<br /> lib/openhab/core/types/refresh_type.rb,<br /> lib/openhab/core/types/up_down_type.rb,<br /> lib/openhab/core/types/quantity_type.rb,<br /> lib/openhab/core/types/date_time_type.rb,<br /> lib/openhab/core/types/stop_move_type.rb,<br /> lib/openhab/core/types/play_pause_type.rb,<br /> lib/openhab/core/types/open_closed_type.rb,<br /> lib/openhab/core/types/next_previous_type.rb,<br /> lib/openhab/core/types/increase_decrease_type.rb,<br /> lib/openhab/core/types/rewind_fastforward_type.rb</span>
+  lib/openhab/core/types/type.rb,<br /> lib/openhab/core/types/hsb_type.rb,<br /> lib/openhab/core/types/raw_type.rb,<br /> lib/openhab/core/types/point_type.rb,<br /> lib/openhab/core/types/on_off_type.rb,<br /> lib/openhab/core/types/string_type.rb,<br /> lib/openhab/core/types/time_series.rb,<br /> lib/openhab/core/types/un_def_type.rb,<br /> lib/openhab/core/types/decimal_type.rb,<br /> lib/openhab/core/types/numeric_type.rb,<br /> lib/openhab/core/types/percent_type.rb,<br /> lib/openhab/core/types/refresh_type.rb,<br /> lib/openhab/core/types/up_down_type.rb,<br /> lib/openhab/core/types/quantity_type.rb,<br /> lib/openhab/core/types/date_time_type.rb,<br /> lib/openhab/core/types/stop_move_type.rb,<br /> lib/openhab/core/types/play_pause_type.rb,<br /> lib/openhab/core/types/open_closed_type.rb,<br /> lib/openhab/core/types/string_list_type.rb,<br /> lib/openhab/core/types/state_description.rb,<br /> lib/openhab/core/types/next_previous_type.rb,<br /> lib/openhab/core/types/command_description.rb,<br /> lib/openhab/core/types/increase_decrease_type.rb,<br /> lib/openhab/core/types/rewind_fastforward_type.rb</span>
 </dd>
   </dl>
   
@@ -2726,11 +3851,11 @@ Some types have additional useful methods.</p>
 <p class="children">
   
     
-      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Types/Command.html" title="OpenHAB::Core::Types::Command (module)">Command</a></span>, <span class='object_link'><a href="Types/NumericType.html" title="OpenHAB::Core::Types::NumericType (module)">NumericType</a></span>, <span class='object_link'><a href="Types/State.html" title="OpenHAB::Core::Types::State (module)">State</a></span>, <span class='object_link'><a href="Types/Type.html" title="OpenHAB::Core::Types::Type (module)">Type</a></span>
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Types/Command.html" title="OpenHAB::Core::Types::Command (module)">Command</a></span>, <span class='object_link'><a href="Types/CommandDescription.html" title="OpenHAB::Core::Types::CommandDescription (module)">CommandDescription</a></span>, <span class='object_link'><a href="Types/NumericType.html" title="OpenHAB::Core::Types::NumericType (module)">NumericType</a></span>, <span class='object_link'><a href="Types/State.html" title="OpenHAB::Core::Types::State (module)">State</a></span>, <span class='object_link'><a href="Types/Type.html" title="OpenHAB::Core::Types::Type (module)">Type</a></span>
     
   
     
-      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Types/DateTimeType.html" title="OpenHAB::Core::Types::DateTimeType (class)">DateTimeType</a></span>, <span class='object_link'><a href="Types/DecimalType.html" title="OpenHAB::Core::Types::DecimalType (class)">DecimalType</a></span>, <span class='object_link'><a href="Types/HSBType.html" title="OpenHAB::Core::Types::HSBType (class)">HSBType</a></span>, <span class='object_link'><a href="Types/IncreaseDecreaseType.html" title="OpenHAB::Core::Types::IncreaseDecreaseType (class)">IncreaseDecreaseType</a></span>, <span class='object_link'><a href="Types/NextPreviousType.html" title="OpenHAB::Core::Types::NextPreviousType (class)">NextPreviousType</a></span>, <span class='object_link'><a href="Types/OnOffType.html" title="OpenHAB::Core::Types::OnOffType (class)">OnOffType</a></span>, <span class='object_link'><a href="Types/OpenClosedType.html" title="OpenHAB::Core::Types::OpenClosedType (class)">OpenClosedType</a></span>, <span class='object_link'><a href="Types/PercentType.html" title="OpenHAB::Core::Types::PercentType (class)">PercentType</a></span>, <span class='object_link'><a href="Types/PlayPauseType.html" title="OpenHAB::Core::Types::PlayPauseType (class)">PlayPauseType</a></span>, <span class='object_link'><a href="Types/PointType.html" title="OpenHAB::Core::Types::PointType (class)">PointType</a></span>, <span class='object_link'><a href="Types/QuantityType.html" title="OpenHAB::Core::Types::QuantityType (class)">QuantityType</a></span>, <span class='object_link'><a href="Types/RawType.html" title="OpenHAB::Core::Types::RawType (class)">RawType</a></span>, <span class='object_link'><a href="Types/RefreshType.html" title="OpenHAB::Core::Types::RefreshType (class)">RefreshType</a></span>, <span class='object_link'><a href="Types/RewindFastforwardType.html" title="OpenHAB::Core::Types::RewindFastforwardType (class)">RewindFastforwardType</a></span>, <span class='object_link'><a href="Types/StopMoveType.html" title="OpenHAB::Core::Types::StopMoveType (class)">StopMoveType</a></span>, <span class='object_link'><a href="Types/StringType.html" title="OpenHAB::Core::Types::StringType (class)">StringType</a></span>, <span class='object_link'><a href="Types/UnDefType.html" title="OpenHAB::Core::Types::UnDefType (class)">UnDefType</a></span>, <span class='object_link'><a href="Types/UpDownType.html" title="OpenHAB::Core::Types::UpDownType (class)">UpDownType</a></span>
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Types/DateTimeType.html" title="OpenHAB::Core::Types::DateTimeType (class)">DateTimeType</a></span>, <span class='object_link'><a href="Types/DecimalType.html" title="OpenHAB::Core::Types::DecimalType (class)">DecimalType</a></span>, <span class='object_link'><a href="Types/HSBType.html" title="OpenHAB::Core::Types::HSBType (class)">HSBType</a></span>, <span class='object_link'><a href="Types/IncreaseDecreaseType.html" title="OpenHAB::Core::Types::IncreaseDecreaseType (class)">IncreaseDecreaseType</a></span>, <span class='object_link'><a href="Types/NextPreviousType.html" title="OpenHAB::Core::Types::NextPreviousType (class)">NextPreviousType</a></span>, <span class='object_link'><a href="Types/OnOffType.html" title="OpenHAB::Core::Types::OnOffType (class)">OnOffType</a></span>, <span class='object_link'><a href="Types/OpenClosedType.html" title="OpenHAB::Core::Types::OpenClosedType (class)">OpenClosedType</a></span>, <span class='object_link'><a href="Types/PercentType.html" title="OpenHAB::Core::Types::PercentType (class)">PercentType</a></span>, <span class='object_link'><a href="Types/PlayPauseType.html" title="OpenHAB::Core::Types::PlayPauseType (class)">PlayPauseType</a></span>, <span class='object_link'><a href="Types/PointType.html" title="OpenHAB::Core::Types::PointType (class)">PointType</a></span>, <span class='object_link'><a href="Types/QuantityType.html" title="OpenHAB::Core::Types::QuantityType (class)">QuantityType</a></span>, <span class='object_link'><a href="Types/RawType.html" title="OpenHAB::Core::Types::RawType (class)">RawType</a></span>, <span class='object_link'><a href="Types/RefreshType.html" title="OpenHAB::Core::Types::RefreshType (class)">RefreshType</a></span>, <span class='object_link'><a href="Types/RewindFastforwardType.html" title="OpenHAB::Core::Types::RewindFastforwardType (class)">RewindFastforwardType</a></span>, <span class='object_link'><a href="Types/StateDescription.html" title="OpenHAB::Core::Types::StateDescription (class)">StateDescription</a></span>, <span class='object_link'><a href="Types/StopMoveType.html" title="OpenHAB::Core::Types::StopMoveType (class)">StopMoveType</a></span>, <span class='object_link'><a href="Types/StringListType.html" title="OpenHAB::Core::Types::StringListType (class)">StringListType</a></span>, <span class='object_link'><a href="Types/StringType.html" title="OpenHAB::Core::Types::StringType (class)">StringType</a></span>, <span class='object_link'><a href="Types/TimeSeries.html" title="OpenHAB::Core::Types::TimeSeries (class)">TimeSeries</a></span>, <span class='object_link'><a href="Types/UnDefType.html" title="OpenHAB::Core::Types::UnDefType (class)">UnDefType</a></span>, <span class='object_link'><a href="Types/UpDownType.html" title="OpenHAB::Core::Types::UpDownType (class)">UpDownType</a></span>
     
   
 </p>
@@ -2747,9 +3872,9 @@ Some types have additional useful methods.</p>
 </div>
 
         <footer>
-  Generated on Wed Apr 19 17:44:48 2023 by
+  Generated on Fri Nov 20 00:11:37 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.28 (ruby-3.1.3).
+  0.9.37 (ruby-3.4.13).
 </footer>
 
       </main>

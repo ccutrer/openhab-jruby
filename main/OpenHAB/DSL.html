@@ -33,6 +33,7 @@
   <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
 
 
+    <script type="text/javascript" charset="utf-8" src="https://openhab.github.io/openhab-jruby/js/versions.js"></script>
     <meta property="og:description" name="description" content="The main DSL available to rules.
 
 Methods on this module are extended onto `main`, the top level `self` in
@@ -87,11 +88,20 @@ inside of other classes, or include the module. - Documentation for openhab-scri
         </nav>
         <div class="page-versions">
   <ul class="version-switcher">
-    <li><a href="/openhab-jruby/5.0" class="version-button stable">Stable <small>(5.0)</small></a></li>
+    <li><a href="/openhab-jruby/5.52" class="version-button stable">Stable <small>(5.52)</small></a></li>
     <li><a href="/openhab-jruby/main" class="version-button main">Latest <small>(main)</small></a></li>
   </ul>
-  
-  
+  <div class="archived-versions">
+    <div class="dropdown-wrapper">
+      <a class="dropdown-title">
+        <span class="title">Archived</span>
+        <span class="arrow down"></span>
+      </a>
+      <ul class="nav-dropdown" id="version-dropdown">
+        
+      </ul>
+    </div>
+  </div>
 </div>
 
 
@@ -289,6 +299,19 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Actions/Notification.html" title="OpenHAB::Core::Actions::Notification (class)">Notification</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Actions/Ping.html" title="OpenHAB::Core::Actions::Ping (class)">Ping</a></span>
       
         &lt; Object
@@ -329,6 +352,19 @@ inside of other classes, or include the module. - Documentation for openhab-scri
 
         
       </ul>
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="Core/Configuration.html" title="OpenHAB::Core::Configuration (class)">Configuration</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
     
   </li>
 
@@ -382,6 +418,17 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="Core/EmulateHash.html" title="OpenHAB::Core::EmulateHash (module)">EmulateHash</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="Core/EntityLookup.html" title="OpenHAB::Core::EntityLookup (module)">EntityLookup</a></span>
       
       
@@ -421,6 +468,19 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Events/AbstractItemChannelLinkRegistryEvent.html" title="OpenHAB::Core::Events::AbstractItemChannelLinkRegistryEvent (class)">AbstractItemChannelLinkRegistryEvent</a></span>
+      
+        &lt; AbstractEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Events/AbstractItemRegistryEvent.html" title="OpenHAB::Core::Events::AbstractItemRegistryEvent (class)">AbstractItemRegistryEvent</a></span>
       
         &lt; AbstractEvent
@@ -447,9 +507,48 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Events/ChannelTriggeredEvent.html" title="OpenHAB::Core::Events::ChannelTriggeredEvent (class)">ChannelTriggeredEvent</a></span>
+      
+        &lt; AbstractEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Events/ItemAddedEvent.html" title="OpenHAB::Core::Events::ItemAddedEvent (class)">ItemAddedEvent</a></span>
       
         &lt; AbstractItemRegistryEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Events/ItemChannelLinkAddedEvent.html" title="OpenHAB::Core::Events::ItemChannelLinkAddedEvent (class)">ItemChannelLinkAddedEvent</a></span>
+      
+        &lt; AbstractItemChannelLinkRegistryEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Events/ItemChannelLinkRemovedEvent.html" title="OpenHAB::Core::Events::ItemChannelLinkRemovedEvent (class)">ItemChannelLinkRemovedEvent</a></span>
+      
+        &lt; AbstractItemChannelLinkRegistryEvent
       
       
     </span>
@@ -483,6 +582,7 @@ inside of other classes, or include the module. - Documentation for openhab-scri
     
   </li>
 
+  
   
   <li class="">
     <span class="sidebar-link">
@@ -536,9 +636,102 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Events/ItemStateUpdatedEvent.html" title="OpenHAB::Core::Events::ItemStateUpdatedEvent (class)">ItemStateUpdatedEvent</a></span>
+      
+        &lt; ItemEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Events/ItemTimeSeriesUpdatedEvent.html" title="OpenHAB::Core::Events::ItemTimeSeriesUpdatedEvent (class)">ItemTimeSeriesUpdatedEvent</a></span>
+      
+        &lt; ItemEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Events/ItemUpdatedEvent.html" title="OpenHAB::Core::Events::ItemUpdatedEvent (class)">ItemUpdatedEvent</a></span>
       
         &lt; AbstractItemRegistryEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Events/Source.html" title="OpenHAB::Core::Events::Source (class)">Source</a></span>
+      
+        &lt; Delegator
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  
+  
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Core/Events/Source/Component.html" title="OpenHAB::Core::Events::Source::Component (class)">Component</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Events/StartlevelEvent.html" title="OpenHAB::Core::Events::StartlevelEvent (class)">StartlevelEvent</a></span>
+      
+        &lt; AbstractEvent
       
       
     </span>
@@ -611,6 +804,107 @@ inside of other classes, or include the module. - Documentation for openhab-scri
     
   </li>
 
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Events/TimerEvent.html" title="OpenHAB::Core::Events::TimerEvent (class)">TimerEvent</a></span>
+      
+        &lt; AbstractEvent
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="Core/IO.html" title="OpenHAB::Core::IO (module)">IO</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/IO/Transport.html" title="OpenHAB::Core::IO::Transport (module)">Transport</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Core/IO/Transport/Serial.html" title="OpenHAB::Core::IO::Transport::Serial (module)">Serial</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-5" href="Core/IO/Transport/Serial/SerialPort.html" title="OpenHAB::Core::IO::Transport::Serial::SerialPort (class)">SerialPort</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-5" href="Core/IO/Transport/Serial/SerialPortManager.html" title="OpenHAB::Core::IO::Transport::Serial::SerialPortManager (module)">SerialPortManager</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+
+        
+      </ul>
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
 
         
       </ul>
@@ -632,6 +926,19 @@ inside of other classes, or include the module. - Documentation for openhab-scri
       <ul>
         
         
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Items/CallItem.html" title="OpenHAB::Core::Items::CallItem (class)">CallItem</a></span>
+      
+        &lt; GenericItem
+      
+      
+    </span>
+    
+    
+  </li>
+
   
   <li class="">
     <span class="sidebar-link">
@@ -698,6 +1005,17 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   </li>
 
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Items/GroupFunction.html" title="OpenHAB::Core::Items::GroupFunction (module)">GroupFunction</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
   <li class="collapsed">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Items/GroupItem.html" title="OpenHAB::Core::Items::GroupItem (class)">GroupItem</a></span>
@@ -732,6 +1050,7 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   
   
+  
 
         
       </ul>
@@ -755,6 +1074,19 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   <li class="">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Items/Item.html" title="OpenHAB::Core::Items::Item (module)">Item</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Items/ItemChannelLinks.html" title="OpenHAB::Core::Items::ItemChannelLinks (class)">ItemChannelLinks</a></span>
+      
+        &lt; SimpleDelegator
       
       
     </span>
@@ -875,9 +1207,10 @@ inside of other classes, or include the module. - Documentation for openhab-scri
         
         
   
+  
   <li class="">
     <span class="sidebar-link">
-      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Core/Items/Persistence/HistoricState.html" title="OpenHAB::Core::Items::Persistence::HistoricState (class)">HistoricState</a></span>
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Core/Items/Persistence/PersistedState.html" title="OpenHAB::Core::Items::Persistence::PersistedState (class)">PersistedState</a></span>
       
         &lt; SimpleDelegator
       
@@ -887,6 +1220,38 @@ inside of other classes, or include the module. - Documentation for openhab-scri
     
   </li>
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -994,10 +1359,11 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   
   
-  
   <li class="">
     <span class="sidebar-link">
-      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Core/Items/Semantics/TagClassMethods.html" title="OpenHAB::Core::Items::Semantics::TagClassMethods (module)">TagClassMethods</a></span>
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Core/Items/Semantics/Provider.html" title="OpenHAB::Core::Items::Semantics::Provider (class)">Provider</a></span>
+      
+        &lt; Provider
       
       
     </span>
@@ -1005,6 +1371,18 @@ inside of other classes, or include the module. - Documentation for openhab-scri
     
   </li>
 
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Core/Items/Semantics/SemanticTag.html" title="OpenHAB::Core::Items::Semantics::SemanticTag (module)">SemanticTag</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
   
   
   
@@ -1065,18 +1443,6 @@ inside of other classes, or include the module. - Documentation for openhab-scri
     
   </li>
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
 
         
@@ -1177,6 +1543,19 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Rules/TaggedArray.html" title="OpenHAB::Core::Rules::TaggedArray (class)">TaggedArray</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
   
 
         
@@ -1198,6 +1577,86 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   <li class="collapsed">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="Core/Sitemaps.html" title="OpenHAB::Core::Sitemaps (module)">Sitemaps</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Sitemaps/LinkableWidget.html" title="OpenHAB::Core::Sitemaps::LinkableWidget (module)">LinkableWidget</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Sitemaps/Provider.html" title="OpenHAB::Core::Sitemaps::Provider (class)">Provider</a></span>
+      
+        &lt; Provider
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Sitemaps/Registry.html" title="OpenHAB::Core::Sitemaps::Registry (class)">Registry</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Sitemaps/Sitemap.html" title="OpenHAB::Core::Sitemaps::Sitemap (module)">Sitemap</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Sitemaps/Widget.html" title="OpenHAB::Core::Sitemaps::Widget (module)">Widget</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="Core/Things.html" title="OpenHAB::Core::Things (module)">Things</a></span>
       
       
@@ -1210,6 +1669,19 @@ inside of other classes, or include the module. - Documentation for openhab-scri
       <ul>
         
         
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/AbstractDescriptionType.html" title="OpenHAB::Core::Things::AbstractDescriptionType (class)">AbstractDescriptionType</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
   
   <li class="">
     <span class="sidebar-link">
@@ -1226,9 +1698,100 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   <li class="">
     <span class="sidebar-link">
-      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/ChannelUID.html" title="OpenHAB::Core::Things::ChannelUID (class)">ChannelUID</a></span>
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/ChannelDefinition.html" title="OpenHAB::Core::Things::ChannelDefinition (class)">ChannelDefinition</a></span>
       
         &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/ChannelGroupDefinition.html" title="OpenHAB::Core::Things::ChannelGroupDefinition (class)">ChannelGroupDefinition</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/ChannelGroupType.html" title="OpenHAB::Core::Things::ChannelGroupType (class)">ChannelGroupType</a></span>
+      
+        &lt; AbstractDescriptionType
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/ChannelGroupTypeUID.html" title="OpenHAB::Core::Things::ChannelGroupTypeUID (class)">ChannelGroupTypeUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/ChannelGroupUID.html" title="OpenHAB::Core::Things::ChannelGroupUID (class)">ChannelGroupUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/ChannelType.html" title="OpenHAB::Core::Things::ChannelType (class)">ChannelType</a></span>
+      
+        &lt; AbstractDescriptionType
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/ChannelTypeUID.html" title="OpenHAB::Core::Things::ChannelTypeUID (class)">ChannelTypeUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/ChannelUID.html" title="OpenHAB::Core::Things::ChannelUID (class)">ChannelUID</a></span>
+      
+        &lt; UID
       
       
     </span>
@@ -1349,6 +1912,33 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   </li>
 
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-4" href="Core/Things/Thing/Properties.html" title="OpenHAB::Core::Things::Thing::Properties (class)">Properties</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -1371,7 +1961,57 @@ inside of other classes, or include the module. - Documentation for openhab-scri
 
   
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/ThingType.html" title="OpenHAB::Core::Things::ThingType (class)">ThingType</a></span>
+      
+        &lt; AbstractDescriptionType
+      
+      
+    </span>
+    
+    
+  </li>
+
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/ThingTypeUID.html" title="OpenHAB::Core::Things::ThingTypeUID (class)">ThingTypeUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/ThingUID.html" title="OpenHAB::Core::Things::ThingUID (class)">ThingUID</a></span>
+      
+        &lt; UID
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Things/UID.html" title="OpenHAB::Core::Things::UID (class)">UID</a></span>
+      
+        &lt; AbstractUID
+      
+      
+    </span>
+    
+    
+  </li>
+
 
         
       </ul>
@@ -1410,6 +2050,17 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   <li class="">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Types/Command.html" title="OpenHAB::Core::Types::Command (module)">Command</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Types/CommandDescription.html" title="OpenHAB::Core::Types::CommandDescription (module)">CommandDescription</a></span>
       
       
     </span>
@@ -1624,6 +2275,19 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Types/StateDescription.html" title="OpenHAB::Core::Types::StateDescription (class)">StateDescription</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Types/StopMoveType.html" title="OpenHAB::Core::Types::StopMoveType (class)">StopMoveType</a></span>
       
         &lt; Object
@@ -1637,7 +2301,33 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   <li class="">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Types/StringListType.html" title="OpenHAB::Core::Types::StringListType (class)">StringListType</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Types/StringType.html" title="OpenHAB::Core::Types::StringType (class)">StringType</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="Core/Types/TimeSeries.html" title="OpenHAB::Core::Types::TimeSeries (class)">TimeSeries</a></span>
       
         &lt; Object
       
@@ -1705,6 +2395,9 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   
   
+  
+  
+  
 
         
       </ul>
@@ -1751,6 +2444,38 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   <li class="collapsed">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="CoreExt/Gems.html" title="OpenHAB::CoreExt::Gems (module)">Gems</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="CoreExt/Gems/MethodSourceScriptPatch.html" title="OpenHAB::CoreExt::Gems::MethodSourceScriptPatch (module)">MethodSourceScriptPatch</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="CoreExt/Java.html" title="OpenHAB::CoreExt::Java (module)">Java</a></span>
       
       
@@ -1782,6 +2507,19 @@ inside of other classes, or include the module. - Documentation for openhab-scri
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="CoreExt/Java/Duration.html" title="OpenHAB::CoreExt::Java::Duration (class)">Duration</a></span>
       
         &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="CoreExt/Java/Instant.html" title="OpenHAB::CoreExt::Java::Instant (class)">Instant</a></span>
+      
+        &lt; java.lang.Object
       
       
     </span>
@@ -1949,6 +2687,17 @@ inside of other classes, or include the module. - Documentation for openhab-scri
     
   </li>
 
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="CoreExt/TimePredicates.html" title="OpenHAB::CoreExt::TimePredicates (module)">TimePredicates</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
 
         
       </ul>
@@ -1971,6 +2720,40 @@ inside of other classes, or include the module. - Documentation for openhab-scri
         
         
   
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="DSL/ConfigDescription.html" title="OpenHAB::DSL::ConfigDescription (module)">ConfigDescription</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/ConfigDescription/Builder.html" title="OpenHAB::DSL::ConfigDescription::Builder (class)">Builder</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
   
   <li class="">
     <span class="sidebar-link">
@@ -2114,6 +2897,17 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   </li>
 
   
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Items/Tags.html" title="OpenHAB::DSL::Items::Tags (module)">Tags</a></span>
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
   <li class="collapsed">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Items/TimedCommand.html" title="OpenHAB::DSL::Items::TimedCommand (module)">TimedCommand</a></span>
@@ -2218,6 +3012,326 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   <li class="collapsed">
     <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="DSL/Sitemaps.html" title="OpenHAB::DSL::Sitemaps (module)">Sitemaps</a></span>
+      
+      
+        <a class="arrow toggle right"></a>
+      
+    </span>
+    
+    
+      
+      <ul>
+        
+        
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/Builder.html" title="OpenHAB::DSL::Sitemaps::Builder (class)">Builder</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/ButtonBuilder.html" title="OpenHAB::DSL::Sitemaps::ButtonBuilder (class)">ButtonBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/ButtongridBuilder.html" title="OpenHAB::DSL::Sitemaps::ButtongridBuilder (class)">ButtongridBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/ChartBuilder.html" title="OpenHAB::DSL::Sitemaps::ChartBuilder (class)">ChartBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/ColorpickerBuilder.html" title="OpenHAB::DSL::Sitemaps::ColorpickerBuilder (class)">ColorpickerBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/ColortemperaturepickerBuilder.html" title="OpenHAB::DSL::Sitemaps::ColortemperaturepickerBuilder (class)">ColortemperaturepickerBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/DefaultBuilder.html" title="OpenHAB::DSL::Sitemaps::DefaultBuilder (class)">DefaultBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/FrameBuilder.html" title="OpenHAB::DSL::Sitemaps::FrameBuilder (class)">FrameBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/GroupBuilder.html" title="OpenHAB::DSL::Sitemaps::GroupBuilder (class)">GroupBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/ImageBuilder.html" title="OpenHAB::DSL::Sitemaps::ImageBuilder (class)">ImageBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/InputBuilder.html" title="OpenHAB::DSL::Sitemaps::InputBuilder (class)">InputBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/LinkableWidgetBuilder.html" title="OpenHAB::DSL::Sitemaps::LinkableWidgetBuilder (class)">LinkableWidgetBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/MapviewBuilder.html" title="OpenHAB::DSL::Sitemaps::MapviewBuilder (class)">MapviewBuilder</a></span>
+      
+        &lt; DefaultBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/NestedSitemapBuilder.html" title="OpenHAB::DSL::Sitemaps::NestedSitemapBuilder (class)">NestedSitemapBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/SelectionBuilder.html" title="OpenHAB::DSL::Sitemaps::SelectionBuilder (class)">SelectionBuilder</a></span>
+      
+        &lt; SwitchBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/SetpointBuilder.html" title="OpenHAB::DSL::Sitemaps::SetpointBuilder (class)">SetpointBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/SitemapBuilder.html" title="OpenHAB::DSL::Sitemaps::SitemapBuilder (class)">SitemapBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/SliderBuilder.html" title="OpenHAB::DSL::Sitemaps::SliderBuilder (class)">SliderBuilder</a></span>
+      
+        &lt; SetpointBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/SwitchBuilder.html" title="OpenHAB::DSL::Sitemaps::SwitchBuilder (class)">SwitchBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/TextBuilder.html" title="OpenHAB::DSL::Sitemaps::TextBuilder (class)">TextBuilder</a></span>
+      
+        &lt; LinkableWidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/VideoBuilder.html" title="OpenHAB::DSL::Sitemaps::VideoBuilder (class)">VideoBuilder</a></span>
+      
+        &lt; WidgetBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/WebviewBuilder.html" title="OpenHAB::DSL::Sitemaps::WebviewBuilder (class)">WebviewBuilder</a></span>
+      
+        &lt; DefaultBuilder
+      
+      
+    </span>
+    
+    
+  </li>
+
+  
+  <li class="">
+    <span class="sidebar-link">
+      <span class='object_link'><a class="sidebar-link sidebar-link-depth-3" href="DSL/Sitemaps/WidgetBuilder.html" title="OpenHAB::DSL::Sitemaps::WidgetBuilder (class)">WidgetBuilder</a></span>
+      
+        &lt; Object
+      
+      
+    </span>
+    
+    
+  </li>
+
+
+        
+      </ul>
+    
+  </li>
+
+  
+  <li class="collapsed">
+    <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-2" href="DSL/Things.html" title="OpenHAB::DSL::Things (module)">Things</a></span>
       
       
@@ -2301,6 +3415,13 @@ inside of other classes, or include the module. - Documentation for openhab-scri
     
   </li>
 
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -2480,6 +3601,7 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   
   
+  
   <li class="">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-0" href="../Date.html" title="Date (class)">Date</a></span>
@@ -2535,6 +3657,7 @@ inside of other classes, or include the module. - Documentation for openhab-scri
     
   </li>
 
+  
   
   
   
@@ -2632,6 +3755,7 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   
   
+  
   <li class="">
     <span class="sidebar-link">
       <span class='object_link'><a class="sidebar-link sidebar-link-depth-0" href="../Symbol.html" title="Symbol (class)">Symbol</a></span>
@@ -2657,6 +3781,7 @@ inside of other classes, or include the module. - Documentation for openhab-scri
     
   </li>
 
+  
   
   
   
@@ -2699,7 +3824,7 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   
   <dl>
     <dt>Included in:</dt>
-    <dd><span class='object_link'><a href="DSL/Items/Builder.html" title="OpenHAB::DSL::Items::Builder (module)">Items::Builder</a></span>, <span class='object_link'><a href="DSL/Rules/BuilderDSL.html" title="OpenHAB::DSL::Rules::BuilderDSL (class)">Rules::BuilderDSL</a></span></dd>
+    <dd><span class='object_link'><a href="DSL/Rules/BuilderDSL.html" title="OpenHAB::DSL::Rules::BuilderDSL (class)">Rules::BuilderDSL</a></span></dd>
   </dl>
   
 
@@ -2707,7 +3832,7 @@ inside of other classes, or include the module. - Documentation for openhab-scri
   <dl>
     <dt>Defined in:</dt>
     <dd>lib/openhab/dsl.rb<span class="defines">,<br />
-  lib/openhab/dsl/rules.rb,<br /> lib/openhab/dsl/events.rb,<br /> lib/openhab/dsl/version.rb,<br /> lib/openhab/dsl/debouncer.rb,<br /> lib/openhab/dsl/rules/guard.rb,<br /> lib/openhab/dsl/rules/terse.rb,<br /> lib/openhab/dsl/items/ensure.rb,<br /> lib/openhab/dsl/thread_local.rb,<br /> lib/openhab/dsl/items/builder.rb,<br /> lib/openhab/dsl/rules/builder.rb,<br /> lib/openhab/dsl/timer_manager.rb,<br /> lib/openhab/dsl/rules/property.rb,<br /> lib/openhab/dsl/rules/triggers.rb,<br /> lib/openhab/dsl/things/builder.rb,<br /> lib/openhab/dsl/events/watch_event.rb,<br /> lib/openhab/dsl/items/timed_command.rb,<br /> lib/openhab/dsl/rules/rule_triggers.rb,<br /> lib/openhab/dsl/rules/name_inference.rb,<br /> lib/openhab/dsl/rules/automation_rule.rb,<br /> lib/openhab/dsl/rules/triggers/changed.rb,<br /> lib/openhab/dsl/rules/triggers/channel.rb,<br /> lib/openhab/dsl/rules/triggers/command.rb,<br /> lib/openhab/dsl/rules/triggers/trigger.rb,<br /> lib/openhab/dsl/rules/triggers/updated.rb,<br /> lib/openhab/dsl/rules/triggers/cron/cron.rb,<br /> lib/openhab/dsl/rules/triggers/conditions/proc.rb,<br /> lib/openhab/dsl/rules/triggers/cron/cron_handler.rb,<br /> lib/openhab/dsl/rules/triggers/conditions/duration.rb,<br /> lib/openhab/dsl/rules/triggers/watch/watch_handler.rb</span>
+  lib/openhab/dsl/rules.rb,<br /> lib/openhab/dsl/events.rb,<br /> lib/openhab/dsl/version.rb,<br /> lib/openhab/dsl/debouncer.rb,<br /> lib/openhab/dsl/items/tags.rb,<br /> lib/openhab/dsl/rules/guard.rb,<br /> lib/openhab/dsl/rules/terse.rb,<br /> lib/openhab/dsl/items/ensure.rb,<br /> lib/openhab/dsl/thread_local.rb,<br /> lib/openhab/dsl/items/builder.rb,<br /> lib/openhab/dsl/rules/builder.rb,<br /> lib/openhab/dsl/timer_manager.rb,<br /> lib/openhab/dsl/rules/property.rb,<br /> lib/openhab/dsl/rules/triggers.rb,<br /> lib/openhab/dsl/things/builder.rb,<br /> lib/openhab/dsl/sitemaps/builder.rb,<br /> lib/openhab/dsl/events/watch_event.rb,<br /> lib/openhab/dsl/items/timed_command.rb,<br /> lib/openhab/dsl/rules/rule_triggers.rb,<br /> lib/openhab/dsl/rules/name_inference.rb,<br /> lib/openhab/dsl/rules/automation_rule.rb,<br /> lib/openhab/dsl/rules/triggers/changed.rb,<br /> lib/openhab/dsl/rules/triggers/channel.rb,<br /> lib/openhab/dsl/rules/triggers/command.rb,<br /> lib/openhab/dsl/rules/triggers/trigger.rb,<br /> lib/openhab/dsl/rules/triggers/updated.rb,<br /> lib/openhab/dsl/rules/triggers/cron/cron.rb,<br /> lib/openhab/dsl/rules/triggers/conditions.rb,<br /> lib/openhab/dsl/config_description/builder.rb,<br /> lib/openhab/dsl/rules/triggers/conditions/generic.rb,<br /> lib/openhab/dsl/rules/triggers/conditions/duration.rb,<br /> lib/openhab/dsl/rules/triggers/watch/watch_handler.rb</span>
 </dd>
   </dl>
   
@@ -2730,7 +3855,7 @@ inside of other classes, or include the module.</p>
 <p class="children">
   
     
-      <strong class="modules">Modules:</strong> <span class='object_link'><a href="DSL/Events.html" title="OpenHAB::DSL::Events (module)">Events</a></span>, <span class='object_link'><a href="DSL/Items.html" title="OpenHAB::DSL::Items (module)">Items</a></span>, <span class='object_link'><a href="DSL/Rules.html" title="OpenHAB::DSL::Rules (module)">Rules</a></span>, <span class='object_link'><a href="DSL/Things.html" title="OpenHAB::DSL::Things (module)">Things</a></span>
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="DSL/ConfigDescription.html" title="OpenHAB::DSL::ConfigDescription (module)">ConfigDescription</a></span>, <span class='object_link'><a href="DSL/Events.html" title="OpenHAB::DSL::Events (module)">Events</a></span>, <span class='object_link'><a href="DSL/Items.html" title="OpenHAB::DSL::Items (module)">Items</a></span>, <span class='object_link'><a href="DSL/Rules.html" title="OpenHAB::DSL::Rules (module)">Rules</a></span>, <span class='object_link'><a href="DSL/Sitemaps.html" title="OpenHAB::DSL::Sitemaps (module)">Sitemaps</a></span>, <span class='object_link'><a href="DSL/Things.html" title="OpenHAB::DSL::Things (module)">Things</a></span>
     
   
     
@@ -2773,7 +3898,7 @@ inside of other classes, or include the module.</p>
 
 </div>
         </dt>
-        <dd><pre class="code"><span class="string"><span class="delimiter">&quot;</span><span class="content">5.1.0</span><span class="delimiter">&quot;</span></span></pre></dd>
+        <dd><pre class="code"><span class="string"><span class="delimiter">&quot;</span><span class="content">5.52.1</span><span class="delimiter">&quot;</span></span></pre></dd>
       
     </dl>
   
@@ -2797,7 +3922,7 @@ inside of other classes, or include the module.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#rule-class_method" title="rule (class method)">.<strong>rule</strong>(name = nil, **kwargs) {|rule| ... } &#x21d2; Core::Rules::Rule<sup>?</sup> </a>
+      <a href="#rule-class_method" title="rule (class method)">.<strong>rule</strong>(name = nil, id: nil) {|rule| ... } &#x21d2; Core::Rules::Rule<sup>?</sup> </a>
     
 
     
@@ -2820,7 +3945,76 @@ inside of other classes, or include the module.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#script-class_method" title="script (class method)">.<strong>script</strong>(name = nil, id: nil, **kwargs) { ... } &#x21d2; Core::Rules::Rule </a>
+      <a href="#rule!-class_method" title="rule! (class method)">.<strong>rule!</strong>(name = nil, id: nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Creates a rule that will remove existing rules with the same id, even when the id has been inferred.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#scene-class_method" title="scene (class method)">.<strong>scene</strong>(name = nil, description: nil, id: nil, tag: nil, tags: nil) { ... } &#x21d2; Core::Rules::Rule<sup>?</sup> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Create a new scene.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#scene!-class_method" title="scene! (class method)">.<strong>scene!</strong>(name = nil, description: nil, id: nil, tag: nil, tags: nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Creates a scene that will remove existing rules/scenes with the same id, even when the id has been inferred.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#script-class_method" title="script (class method)">.<strong>script</strong>(name = nil, description: nil, id: nil, tag: nil, tags: nil) { ... } &#x21d2; Core::Rules::Rule<sup>?</sup> </a>
     
 
     
@@ -2840,6 +4034,29 @@ inside of other classes, or include the module.</p>
 </li>
 
       
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#script!-class_method" title="script! (class method)">.<strong>script!</strong>(name = nil, description: nil, id: nil, tag: nil, tags: nil)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Creates a script that will remove existing rules/scripts with the same id, even when the id has been inferred.</p>
+</div></span>
+  
+</li>
+
+      
     </ul>
   
     <h2 id="Rule-Support-group">
@@ -2854,7 +4071,30 @@ inside of other classes, or include the module.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#profile-class_method" title="profile (class method)">.<strong>profile</strong>(id) {|event, command: nil, state: nil, link:, item:, channel_uid:, configuration:, context:| ... } &#x21d2; void </a>
+      <a href="#config_description-class_method" title="config_description (class method)">.<strong>config_description</strong>(uri = nil) { ... } &#x21d2; org.openhab.core.config.core.ConfigDescription </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Create a <a href="https://www.openhab.org/javadoc/latest/org/openhab/core/config/core/ConfigDescription.html" target="_parent" title="ConfigDescription">ConfigDescription</a> object.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#profile-class_method" title="profile (class method)">.<strong>profile</strong>(id, label: nil, type: :state, config_description: nil) {|event, command: nil, state: nil, trigger: nil, time_series: nil, callback:, link:, item:, channel_uid:, configuration:, context:| ... } &#x21d2; void </a>
     
 
     
@@ -2950,6 +4190,28 @@ inside of other classes, or include the module.</p>
   
     <span class="summary_desc"><div class='inline'><p>ValueCache is the interface used to access a <span class='object_link'><a href="#shared_cache-class_method" title="OpenHAB::DSL.shared_cache (method)">shared cache</a></span> available between scripts and/or rule executions.</p>
 </div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sitemaps-class_method" title="sitemaps (class method)">.<strong>sitemaps</strong>  &#x21d2; Core::Sitemaps::Registry </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
   
 </li>
 
@@ -3060,7 +4322,7 @@ inside of other classes, or include the module.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#debounce_for-class_method" title="debounce_for (class method)">.<strong>debounce_for</strong>(debounce_time, id: nil, &amp;block)  &#x21d2; void </a>
+      <a href="#debounce_for-class_method" title="debounce_for (class method)">.<strong>debounce_for</strong>(debounce_time, id: nil) { ... } &#x21d2; void </a>
     
 
     
@@ -3083,7 +4345,7 @@ inside of other classes, or include the module.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#only_every-class_method" title="only_every (class method)">.<strong>only_every</strong>(interval, id: nil, &amp;block)  &#x21d2; void </a>
+      <a href="#only_every-class_method" title="only_every (class method)">.<strong>only_every</strong>(interval, id: nil) { ... } &#x21d2; void </a>
     
 
     
@@ -3129,7 +4391,7 @@ inside of other classes, or include the module.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#throttle_for-class_method" title="throttle_for (class method)">.<strong>throttle_for</strong>(duration, id: nil, &amp;block)  &#x21d2; void </a>
+      <a href="#throttle_for-class_method" title="throttle_for (class method)">.<strong>throttle_for</strong>(duration, id: nil) { ... } &#x21d2; void </a>
     
 
     
@@ -3212,6 +4474,29 @@ to reduce repetitions</p>
 
   
     <span class="summary_desc"><div class='inline'><p>Global method that takes a block and for the duration of the block all commands sent will check if the item is in the command's state before sending the command.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ensure_states!-class_method" title="ensure_states! (class method)">.<strong>ensure_states!</strong>(active: true)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Permanently enable conditional execution of commands and updates for the current thread.</p>
 </div></span>
   
 </li>
@@ -3334,7 +4619,7 @@ to reduce repetitions</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#provider!-class_method" title="provider! (class method)">.<strong>provider!</strong>(things: nil, items: nil, metadata: nil, links: nil, **metadata_items)  &#x21d2; void </a>
+      <a href="#provider!-class_method" title="provider! (class method)">.<strong>provider!</strong>(things: nil, items: nil, metadata: nil, links: nil, **metadata_items)  &#x21d2; Hash </a>
     
 
     
@@ -3443,19 +4728,71 @@ to reduce repetitions</p>
   
   
   
-  
-  
-  
-  <h3 class="inherited">Methods included from <span class='object_link'><a href="Core/EntityLookup.html" title="OpenHAB::Core::EntityLookup (module)">Core::EntityLookup</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="Core/EntityLookup.html#method_missing-instance_method" title="OpenHAB::Core::EntityLookup#method_missing (method)">#method_missing</a></span></p>
-<div id="method_missing_details" class="method_details_list">
+  <div id="method_missing_details" class="method_details_list">
   <h2>Dynamic Method Handling</h2>
-  <p class="notice super">
+  <p class="notice this">
     This class handles dynamic methods through the <tt>method_missing</tt> method
     
-      in the class <span class='object_link'><a href="Core/EntityLookup.html#method_missing-instance_method" title="OpenHAB::Core::EntityLookup#method_missing (method)">OpenHAB::Core::EntityLookup</a></span>
-    
   </p>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="method_missing-instance_method">
+  
+    #<strong>method_missing</strong>(method, *args)  &#x21d2; <tt><span class='object_link'>Object</span></tt>  <span class="extras">(private)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Provide access to the script context / variables
+see OpenHAB::DSL::Rules::AutomationRule#execute!</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1114
+1115
+1116
+1117
+1118
+1119
+1120
+1121
+1122
+1123
+1124
+1125</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 1114</span>
+
+<span class="keyword">def</span> <span class="function">method_missing</span>(method, *args)
+  <span class="keyword">return</span> <span class="keyword">super</span> <span class="keyword">unless</span> args.empty? &amp;&amp; !block_given?
+
+  <span class="keyword">if</span> (context = <span class="constant">Thread</span>.current[<span class="symbol">:openhab_context</span>]) &amp;&amp; context.key?(method)
+    logger.trace { <span class="string"><span class="delimiter">&quot;</span><span class="content">DSL#method_missing found context variable: '</span><span class="inline"><span class="inline-delimiter">#{</span>method<span class="inline-delimiter">}</span></span><span class="content">'</span><span class="delimiter">&quot;</span></span> }
+    <span class="keyword">return</span> context[method]
+  <span class="keyword">elsif</span> <span class="constant">Core</span>.ui_context&amp;.key?(method)
+    logger.trace { <span class="string"><span class="delimiter">&quot;</span><span class="content">DSL#method_missing found UI context variable: '</span><span class="inline"><span class="inline-delimiter">#{</span>method<span class="inline-delimiter">}</span></span><span class="content">'</span><span class="delimiter">&quot;</span></span> }
+    <span class="keyword">return</span> <span class="constant">Core</span>.ui_context[method]
+  <span class="keyword">end</span>
+  <span class="keyword">super</span>
+<span class="keyword">end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
   
 </div>
 
@@ -3476,7 +4813,7 @@ to reduce repetitions</p>
 </h3><div class="docstring">
   <div class="discussion">
     <p>Create a timer and execute the supplied block after the specified duration</p>
-<h3 id="reentrant-timers"><a href="#reentrant-timers" class="header-anchor">#</a>Reentrant Timers</h3>
+<h3 id="reentrant-timers">Reentrant Timers<a href="#reentrant-timers" aria-label="Link to heading 'Reentrant Timers'" data-heading-content="Reentrant Timers" class="header-anchor">#</a></h3>
 <p>Timers with an id are reentrant by id. Reentrant means that when the same id is encountered,
 the timer is rescheduled rather than creating a second new timer. Note that the timer will
 execute the block provided in the latest call.</p>
@@ -3490,6 +4827,15 @@ array with a symbol of the timer's purpose, like <code>[:vacancy, item]</code>. 
 assuming default settings, every Ruby file (for file-based rules) or UI rule gets its
 own instance of the timers object, so you don't need to worry about collisions among
 different files.</p>
+<h3 id="sharing-timers-with-other-scripts">Sharing Timers with other scripts<a href="#sharing-timers-with-other-scripts" aria-label="Link to heading 'Sharing Timers with other scripts'" data-heading-content="Sharing Timers with other scripts" class="header-anchor">#</a></h3>
+<p>When a timer is stored in the <span class='object_link'><a href="#shared_cache-class_method" title="OpenHAB::DSL.shared_cache (method)">shared_cache</a></span>, it will automatically be converted into
+an openHAB Timer object. It can then be used in other scripts or UI rules,
+written in JRuby or other supported languages.</p>
+<p>Timers are normally managed by TimerManager, and are normally automatically cancelled
+when the script unloads/reloads.
+To disable this automatic timer cancellation at script unload, call <span class='object_link'><a href="Core/Timer.html#unmanage-instance_method" title="OpenHAB::Core::Timer#unmanage (method)">Core::Timer#unmanage</a></span>.</p>
+<p>openHAB will cancel the timer stored in the <span class='object_link'><a href="#shared_cache-class_method" title="OpenHAB::DSL.shared_cache (method)">shared_cache</a></span>
+and remove the cache entry when all the scripts that <em>had accessed</em> it have been unloaded.</p>
 
 
   </div>
@@ -3497,27 +4843,27 @@ different files.</p>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
-        <p class="example_title"><div class='inline'><p>Create a simple timer</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Create a simple timer</p>
+</div></h5>
       
       <pre class="example code"><code>after <span class="integer">5</span>.seconds <span class="keyword">do</span>
   logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">Timer Fired</span><span class="delimiter">&quot;</span></span>)
 <span class="keyword">end</span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Timers delegate methods to openHAB timer objects</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Timers delegate methods to openHAB timer objects</p>
+</div></h5>
       
       <pre class="example code"><code>after <span class="integer">1</span>.second <span class="keyword">do</span> |timer|
   logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">Timer is active? </span><span class="inline"><span class="inline-delimiter">#{</span>timer.active?<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span>)
 <span class="keyword">end</span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Timers can be rescheduled to run again, waiting the original duration</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Timers can be rescheduled to run again, waiting the original duration</p>
+</div></h5>
       
       <pre class="example code"><code>after <span class="integer">3</span>.seconds <span class="keyword">do</span> |timer|
   logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">Timer Fired</span><span class="delimiter">&quot;</span></span>)
@@ -3525,8 +4871,8 @@ different files.</p>
 <span class="keyword">end</span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Timers can be rescheduled for different durations</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Timers can be rescheduled for different durations</p>
+</div></h5>
       
       <pre class="example code"><code>after <span class="integer">3</span>.seconds <span class="keyword">do</span> |timer|
   logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">Timer Fired</span><span class="delimiter">&quot;</span></span>)
@@ -3534,8 +4880,8 @@ different files.</p>
 <span class="keyword">end</span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Timers can be manipulated through the returned object</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Timers can be manipulated through the returned object</p>
+</div></h5>
       
       <pre class="example code"><code>mytimer = after <span class="integer">1</span>.minute <span class="keyword">do</span>
   logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">It has been 1 minute</span><span class="delimiter">&quot;</span></span>)
@@ -3544,8 +4890,8 @@ different files.</p>
 mytimer.cancel</code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Reentrant timers will automatically reschedule if the same id is encountered again</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Reentrant timers will automatically reschedule if the same id is encountered again</p>
+</div></h5>
       
       <pre class="example code"><code>rule <span class="string"><span class="delimiter">&quot;</span><span class="content">Turn off closet light after 10 minutes</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
   changed <span class="constant">ClosetLights</span>.members, <span class="key">to</span>: <span class="constant">ON</span>
@@ -3557,8 +4903,8 @@ mytimer.cancel</code></pre>
 <span class="keyword">end</span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Timers with id can be managed through the built-in <code>timers</code> object</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Timers with id can be managed through the built-in <code>timers</code> object</p>
+</div></h5>
       
       <pre class="example code"><code>after <span class="integer">1</span>.minute, <span class="key">id</span>: <span class="symbol">:foo</span> <span class="keyword">do</span>
   logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">managed timer has fired</span><span class="delimiter">&quot;</span></span>)
@@ -3571,16 +4917,16 @@ timers.cancel(<span class="symbol">:foo</span>)
 <span class="keyword">end</span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Only create a new timer if it isn't already scheduled</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Only create a new timer if it isn't already scheduled</p>
+</div></h5>
       
       <pre class="example code"><code>after(<span class="integer">1</span>.minute, <span class="key">id</span>: <span class="symbol">:foo</span>, <span class="key">reschedule</span>: <span class="predefined-constant">false</span>) <span class="keyword">do</span>
   logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">Timer fired</span><span class="delimiter">&quot;</span></span>)
 <span class="keyword">end</span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Reentrant timers will execute the block from the most recent call</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Reentrant timers will execute the block from the most recent call</p>
+</div></h5>
       
       <pre class="example code"><code><span class="comment"># In the following example, if Item1 received a command, followed by Item2,</span>
 <span class="comment"># the timer will execute the block referring to Item2.</span>
@@ -3593,6 +4939,22 @@ rule <span class="string"><span class="delimiter">&quot;</span><span class="cont
   <span class="keyword">end</span>
 <span class="keyword">end</span></code></pre>
     
+      
+        <h5 class="example_title"><div class='inline'><p>Timers can be shared with other scripts</p>
+</div></h5>
+      
+      <pre class="example code"><code><span class="comment"># script1.rb:</span>
+timer = after(<span class="integer">10</span>.hours) { logger.warn <span class="string"><span class="delimiter">&quot;</span><span class="content">Timer created in script1.rb fired</span><span class="delimiter">&quot;</span></span> }
+shared_cache[<span class="symbol">:script1_timer</span>] = timer
+
+<span class="comment"># inside a different JRuby UI rule or script:</span>
+<span class="comment"># This is an openHAB timer object, not a JRuby timer object</span>
+<span class="comment"># the reschedule method expects a ZonedDateTime</span>
+shared_cache[<span class="symbol">:script1_timer</span>]&amp;.reschedule(<span class="integer">10</span>.seconds.from_now)
+
+<span class="comment"># inside another JS script:</span>
+cache.shared.get(<span class="string"><span class="delimiter">&quot;</span><span class="content">script1_timer</span><span class="delimiter">&quot;</span></span>)?.cancel()</code></pre>
+    
   </div>
 <p class="tag_title">Parameters:</p>
 <ul class="param">
@@ -3602,7 +4964,7 @@ rule <span class="string"><span class="delimiter">&quot;</span><span class="cont
         <span class='name'>duration</span>
       
       
-        <span class='type'>(<tt><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/temporal/TemporalAmount.html" target="_parent" title="java.time.temporal.TemporalAmount">java.time.temporal.TemporalAmount</a></tt>, <tt>#to_zoned_date_time</tt>, <tt>Proc</tt>)</span>
+        <span class='type'>(<tt><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/temporal/TemporalAmount.html" target="_parent" title="java.time.temporal.TemporalAmount">java.time.temporal.TemporalAmount</a></tt>, <tt>#to_zoned_date_time</tt>, <tt>Proc</tt>)</span>
       
       
       
@@ -3729,23 +5091,23 @@ Otherwise the new timer.</p>
       <pre class="lines">
 
 
-343
-344
-345
-346
-347
-348
-349</pre>
+435
+436
+437
+438
+439
+440
+441</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 343</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 435</span>
 
 <span class="keyword">def</span> <span class="function">after</span>(duration, <span class="key">id</span>: <span class="predefined-constant">nil</span>, <span class="key">reschedule</span>: <span class="predefined-constant">true</span>, &amp;block)
   raise <span class="constant">ArgumentError</span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">Block is required</span><span class="delimiter">&quot;</span></span> <span class="keyword">unless</span> block
 
   <span class="comment"># Carry rule name to timer</span>
   thread_locals = <span class="constant">ThreadLocal</span>.persist
-  timers.create(duration, <span class="key">id</span>: id, <span class="key">reschedule</span>: reschedule, <span class="key">thread_locals</span>: thread_locals, <span class="key">block</span>: block)
+  timers.create(duration, <span class="key">id</span>:, <span class="key">reschedule</span>:, <span class="key">thread_locals</span>:, <span class="key">block</span>:)
 <span class="keyword">end</span></pre>
     </td>
   </tr>
@@ -3772,17 +5134,17 @@ depending on the format of the string.</p>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
-        <p class="example_title"><div class='inline'><p>Range#cover?</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Range#cover?</p>
+</div></h5>
       
       <pre class="example code"><code>logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">Within month-day range</span><span class="delimiter">&quot;</span></span>) <span class="keyword">if</span> between(<span class="string"><span class="delimiter">'</span><span class="content">02-20</span><span class="delimiter">'</span></span>..<span class="string"><span class="delimiter">'</span><span class="content">06-01</span><span class="delimiter">'</span></span>).cover?(<span class="constant">MonthDay</span>.now)</code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Use in a Case</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Use in a Case</p>
+</div></h5>
       
       <pre class="example code"><code><span class="keyword">case</span> <span class="constant">MonthDay</span>.now
 <span class="keyword">when</span> between(<span class="string"><span class="delimiter">'</span><span class="content">01-01</span><span class="delimiter">'</span></span>..<span class="string"><span class="delimiter">'</span><span class="content">03-31</span><span class="delimiter">'</span></span>)
@@ -3792,8 +5154,8 @@ depending on the format of the string.</p>
 <span class="keyword">end</span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Create a time range</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Create a time range</p>
+</div></h5>
       
       <pre class="example code"><code>between(<span class="string"><span class="delimiter">'</span><span class="content">7am</span><span class="delimiter">'</span></span>..<span class="string"><span class="delimiter">'</span><span class="content">12pm</span><span class="delimiter">'</span></span>).cover?(<span class="constant">LocalTime</span>.now)</code></pre>
     
@@ -3843,16 +5205,16 @@ depending on the format of the string.</p>
       <pre class="lines">
 
 
-373
-374
-375
-376
-377
-378
-379</pre>
+465
+466
+467
+468
+469
+470
+471</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 373</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 465</span>
 
 <span class="keyword">def</span> <span class="function">between</span>(range)
   raise <span class="constant">ArgumentError</span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">Supplied object must be a range</span><span class="delimiter">&quot;</span></span> <span class="keyword">unless</span> range.is_a?(<span class="constant">Range</span>)
@@ -3867,9 +5229,137 @@ depending on the format of the string.</p>
 </div>
     
       <div class="method_details ">
+  <h3 class="signature " id="config_description-class_method">
+  
+    .<strong>config_description</strong>(uri = nil) { ... } &#x21d2; <tt><a href="https://www.openhab.org/javadoc/latest/org/openhab/core/config/core/ConfigDescription.html" target="_parent" title="org.openhab.core.config.core.ConfigDescription">org.openhab.core.config.core.ConfigDescription</a></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Create a <a href="https://www.openhab.org/javadoc/latest/org/openhab/core/config/core/ConfigDescription.html" target="_parent" title="ConfigDescription">ConfigDescription</a> object.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h4 class="tag_title">Examples:</h4>
+    
+      
+      <pre class="example code"><code>config_description = config_description <span class="keyword">do</span>
+  parameter <span class="symbol">:ungrouped_parameter</span>, <span class="symbol">:decimal</span>, <span class="key">label</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Ungrouped Parameter</span><span class="delimiter">&quot;</span></span>, <span class="key">min</span>: <span class="integer">1</span>, <span class="key">max</span>: <span class="integer">5</span>
+
+  group <span class="string"><span class="delimiter">&quot;</span><span class="content">Config Group</span><span class="delimiter">&quot;</span></span>, <span class="key">label</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Grouped parameters</span><span class="delimiter">&quot;</span></span>, <span class="key">advanced</span>: <span class="predefined-constant">true</span> <span class="keyword">do</span>
+    parameter <span class="symbol">:my_parameter</span>, <span class="symbol">:string</span>, <span class="key">label</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">My Parameter</span><span class="delimiter">&quot;</span></span>, <span class="key">description</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">My Parameter Description</span><span class="delimiter">&quot;</span></span>
+    parameter <span class="symbol">:other_parameter</span>, <span class="symbol">:integer</span>, <span class="key">label</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Other Parameter</span><span class="delimiter">&quot;</span></span>, <span class="key">description</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Other Parameter Description</span><span class="delimiter">&quot;</span></span>
+  <span class="keyword">end</span>
+<span class="keyword">end</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>uri</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/URI.html" target="_parent" title="java.net.URI">java.net.URI</a></tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>The URI for the ConfigDescription. When nil, a dummy URI is used which will
+be replaced by the profile with the correct URI for that profile.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'><p>Block that consists of <span class='object_link'><a href="DSL/ConfigDescription/Builder.html#parameter-instance_method" title="OpenHAB::DSL::ConfigDescription::Builder#parameter (method)">OpenHAB::DSL::ConfigDescription::Builder#parameter</a></span> and <span class='object_link'><a href="DSL/ConfigDescription/Builder.html#group-instance_method" title="OpenHAB::DSL::ConfigDescription::Builder#group (method)">OpenHAB::DSL::ConfigDescription::Builder#group</a></span> calls.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><a href="https://www.openhab.org/javadoc/latest/org/openhab/core/config/core/ConfigDescription.html" target="_parent" title="org.openhab.core.config.core.ConfigDescription">org.openhab.core.config.core.ConfigDescription</a></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>The created <a href="https://www.openhab.org/javadoc/latest/org/openhab/core/config/core/ConfigDescription.html" target="_parent" title="ConfigDescription">ConfigDescription</a> object</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+253
+254
+255
+256
+257</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 253</span>
+
+<span class="keyword">def</span> <span class="function">config_description</span>(uri = <span class="predefined-constant">nil</span>, &amp;block)
+  raise <span class="constant">ArgumentError</span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">Block is required</span><span class="delimiter">&quot;</span></span> <span class="keyword">unless</span> block
+
+  <span class="constant">ConfigDescription</span>::<span class="constant">Builder</span>.new.build(uri, &amp;block)
+<span class="keyword">end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
   <h3 class="signature " id="debounce_for-class_method">
   
-    .<strong>debounce_for</strong>(debounce_time, id: nil, &amp;block)  &#x21d2; <tt>void</tt> 
+    .<strong>debounce_for</strong>(debounce_time, id: nil) { ... } &#x21d2; <tt>void</tt> 
   
 
   
@@ -3891,11 +5381,11 @@ since the last call to debounce_for.</p>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
-        <p class="example_title"><div class='inline'><p>Run a block of code only after an item has stopped changing</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Run a block of code only after an item has stopped changing</p>
+</div></h5>
       
       <pre class="example code"><code><span class="comment"># This can be placed inside a UI rule with an Item Change trigger for</span>
 <span class="comment"># a Door contact sensor.</span>
@@ -3930,21 +5420,6 @@ debounce_for(<span class="integer">10</span>.minutes) <span class="keyword">do</
   
     <li>
       
-        <span class='name'>block</span>
-      
-      
-        <span class='type'>(<tt>Block</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'><p>The block to be debounced.</p>
-</div>
-      
-    </li>
-  
-    <li>
-      
         <span class='name'>debounce_time</span>
       
       
@@ -3969,6 +5444,23 @@ to occur more frequently than the minimum interval.</p>
   
 </ul>
 
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'><p>The block to be debounced.</p>
+</div>
+      
+    </li>
+  
+</ul>
 
   <p class="tag_title">See Also:</p>
   <ul class="see">
@@ -3983,17 +5475,17 @@ to occur more frequently than the minimum interval.</p>
       <pre class="lines">
 
 
-445
-446
-447
-448</pre>
+537
+538
+539
+540</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 445</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 537</span>
 
-<span class="keyword">def</span> <span class="function">debounce_for</span>(debounce_time, <span class="key">id</span>: <span class="predefined-constant">nil</span>, &amp;block)
+<span class="keyword">def</span> <span class="function">debounce_for</span>(debounce_time, <span class="key">id</span>: <span class="predefined-constant">nil</span>, &amp;)
   idle_time = debounce_time.is_a?(<span class="constant">Range</span>) ? debounce_time.begin : debounce_time
-  debounce(<span class="key">for</span>: debounce_time, <span class="key">idle_time</span>: idle_time, <span class="key">id</span>: id, &amp;block)
+  debounce(<span class="key">for</span>: debounce_time, <span class="key">idle_time</span>:, <span class="key">id</span>:, &amp;)
 <span class="keyword">end</span></pre>
     </td>
   </tr>
@@ -4013,7 +5505,7 @@ to occur more frequently than the minimum interval.</p>
   <div class="discussion">
     <p>Global method that takes a block and for the duration of the block
 all commands sent will check if the item is in the command's state
-before sending the command.</p>
+before sending the command. This also applies to updates.</p>
 
 
   </div>
@@ -4021,11 +5513,11 @@ before sending the command.</p>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
-        <p class="example_title"><div class='inline'><p>Turn on several switches only if they're not already on</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Turn on several switches only if they're not already on</p>
+</div></h5>
       
       <pre class="example code"><code>ensure_states <span class="keyword">do</span>
   <span class="constant">Switch1</span>.on
@@ -4102,23 +5594,146 @@ ensure_states <span class="keyword">do</span>
       <pre class="lines">
 
 
-594
-595
-596
-597
-598
-599
-600</pre>
+725
+726
+727
+728
+729
+730</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 594</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 725</span>
 
 <span class="keyword">def</span> <span class="function">ensure_states</span>
-  old = <span class="constant">Thread</span>.current[<span class="symbol">:openhab_ensure_states</span>]
-  <span class="constant">Thread</span>.current[<span class="symbol">:openhab_ensure_states</span>] = <span class="predefined-constant">true</span>
+  old = ensure_states!
   <span class="keyword">yield</span>
 <span class="keyword">ensure</span>
-  <span class="constant">Thread</span>.current[<span class="symbol">:openhab_ensure_states</span>] = old
+  ensure_states!(<span class="key">active</span>: old)
+<span class="keyword">end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ensure_states!-class_method">
+  
+    .<strong>ensure_states!</strong>(active: true)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'><p>This method is only intended for use at the top level of rule
+scripts. If it's used within library methods, or hap-hazardly within
+rules, things can get very confusing because the prior state won't be
+properly restored.</p>
+</div>
+  </div>
+
+<p>Permanently enable conditional execution of commands and updates for the current thread.</p>
+<p>When conditional executions are enabled, commands and updates will only be sent if the
+item's current state is not the same as the command or updated state.
+This eliminates the need to chain the command and update calls through
+<span class='object_link'><a href="DSL/Items/Ensure/Ensurable.html#ensure-instance_method" title="OpenHAB::DSL::Items::Ensure::Ensurable#ensure (method)">ensure</a></span>.</p>
+<p>When conditional executions are enabled either by this method or within a block of <span class='object_link'><a href="#ensure_states-class_method" title="OpenHAB::DSL.ensure_states (method)">ensure_states</a></span>,
+commands and updates can still be forcefully executed using the corresponding bang methods, e.g.
+<code>Item1.on!</code>, <code>Item1.command!(50)</code>, or <code>Item1.update!(ON)</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h4 class="tag_title">Examples:</h4>
+    
+      
+        <h5 class="example_title"><div class='inline'><p>Make ensure_states the default for the rest of the script</p>
+</div></h5>
+      
+      <pre class="example code"><code>ensure_states!
+
+<span class="comment"># From now, all commands are &quot;ensured&quot;, i.e. only sent when the current state is different</span>
+<span class="constant">Item1</span>.on
+<span class="constant">Item2</span>.command(<span class="constant">ON</span>)
+
+<span class="comment"># While ensure_states! is active, we can still forcibly send a command</span>
+<span class="comment"># regardless of the item's current state</span>
+<span class="constant">Item2</span>.on!</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>active</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>true</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>Whether to enable or disable conditional executions.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>The previous ensure_states setting.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#ensure_states-class_method" title="OpenHAB::DSL.ensure_states (method)">ensure_states</a></span></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+674
+675
+676
+677
+678</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 674</span>
+
+<span class="keyword">def</span> <span class="function">ensure_states!</span>(<span class="key">active</span>: <span class="predefined-constant">true</span>)
+  old = <span class="constant">Thread</span>.current[<span class="symbol">:openhab_ensure_states</span>]
+  <span class="constant">Thread</span>.current[<span class="symbol">:openhab_ensure_states</span>] = active
+  old
 <span class="keyword">end</span></pre>
     </td>
   </tr>
@@ -4163,11 +5778,11 @@ for <span class='object_link'><a href="CoreExt/Ephemeris.html" title="OpenHAB::C
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
-        <p class="example_title"><div class='inline'><p>Set a specific holiday configuration file temporarily</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Set a specific holiday configuration file temporarily</p>
+</div></h5>
       
       <pre class="example code"><code>holiday_file(<span class="string"><span class="delimiter">&quot;</span><span class="content">/home/cody/holidays.xml</span><span class="delimiter">&quot;</span></span>) <span class="keyword">do</span>
   <span class="constant">Time</span>.now.next_holiday
@@ -4289,20 +5904,20 @@ for <span class='object_link'><a href="CoreExt/Ephemeris.html" title="OpenHAB::C
       <pre class="lines">
 
 
-925
-926
-927
-928
-929
-930
-931
-932
-933
-934
-935</pre>
+1055
+1056
+1057
+1058
+1059
+1060
+1061
+1062
+1063
+1064
+1065</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 925</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 1055</span>
 
 <span class="keyword">def</span> <span class="function">holiday_file</span>(*args)
   raise <span class="constant">ArgumentError</span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">wrong number of arguments (given </span><span class="inline"><span class="inline-delimiter">#{</span>args.length<span class="inline-delimiter">}</span></span><span class="content">, expected 0..1)</span><span class="delimiter">&quot;</span></span> <span class="keyword">if</span> args.length &gt; <span class="integer">1</span>
@@ -4339,7 +5954,7 @@ for <span class='object_link'><a href="CoreExt/Ephemeris.html" title="OpenHAB::C
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
       <pre class="example code"><code>holiday_file!(<span class="string"><span class="delimiter">&quot;</span><span class="content">/home/cody/holidays.xml</span><span class="delimiter">&quot;</span></span>)
@@ -4400,12 +6015,12 @@ for <span class='object_link'><a href="CoreExt/Ephemeris.html" title="OpenHAB::C
       <pre class="lines">
 
 
-950
-951
-952</pre>
+1080
+1081
+1082</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 950</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 1080</span>
 
 <span class="keyword">def</span> <span class="function">holiday_file!</span>(file = <span class="predefined-constant">nil</span>)
   <span class="constant">Thread</span>.current[<span class="symbol">:openhab_holiday_file</span>] = file
@@ -4438,7 +6053,7 @@ Switch SwitchTest &quot;Test Switch&quot;
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
       <pre class="example code"><code>logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">Item Count: </span><span class="inline"><span class="inline-delimiter">#{</span>items.count<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span>)  <span class="comment"># Item Count: 2</span>
@@ -4483,16 +6098,12 @@ logger.info(<span class="string"><span class="delimiter">&quot;</span><span clas
       <pre class="lines">
 
 
-207
-208
-209</pre>
+2</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 207</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 2</span>
 
-<span class="keyword">def</span> <span class="function">items</span>
-  <span class="constant">Core</span>::<span class="constant">Items</span>::<span class="constant">Registry</span>.instance
-<span class="keyword">end</span></pre>
+<span class="keyword">def</span> <span class="function">items</span>; <span class="keyword">end</span></pre>
     </td>
   </tr>
 </table>
@@ -4501,7 +6112,7 @@ logger.info(<span class="string"><span class="delimiter">&quot;</span><span clas
       <div class="method_details ">
   <h3 class="signature " id="only_every-class_method">
   
-    .<strong>only_every</strong>(interval, id: nil, &amp;block)  &#x21d2; <tt>void</tt> 
+    .<strong>only_every</strong>(interval, id: nil) { ... } &#x21d2; <tt>void</tt> 
   
 
   
@@ -4520,11 +6131,11 @@ execute the block immediately, and will wait until the end of the interval.</p>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
-        <p class="example_title"><div class='inline'><p>Prevent door bell from ringing repeatedly</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Prevent door bell from ringing repeatedly</p>
+</div></h5>
       
       <pre class="example code"><code><span class="comment"># This can be called from a UI rule.</span>
 <span class="comment"># For file based rule, use the `only_every` rule guard</span>
@@ -4553,21 +6164,6 @@ only_every(<span class="integer">30</span>.seconds) { <span class="constant">Aud
   
     <li>
       
-        <span class='name'>block</span>
-      
-      
-        <span class='type'>(<tt>Block</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'><p>The block to be throttled.</p>
-</div>
-      
-    </li>
-  
-    <li>
-      
         <span class='name'>interval</span>
       
       
@@ -4584,6 +6180,23 @@ subsequent triggers are ignored.</p>
   
 </ul>
 
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'><p>The block to be throttled.</p>
+</div>
+      
+    </li>
+  
+</ul>
 
   <p class="tag_title">See Also:</p>
   <ul class="see">
@@ -4600,17 +6213,17 @@ subsequent triggers are ignored.</p>
       <pre class="lines">
 
 
-508
-509
-510
-511</pre>
+600
+601
+602
+603</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 508</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 600</span>
 
-<span class="keyword">def</span> <span class="function">only_every</span>(interval, <span class="key">id</span>: <span class="predefined-constant">nil</span>, &amp;block)
+<span class="keyword">def</span> <span class="function">only_every</span>(interval, <span class="key">id</span>: <span class="predefined-constant">nil</span>, &amp;)
   interval = <span class="integer">1</span>.send(interval) <span class="keyword">if</span> <span class="symbol"><span class="delimiter">%i[</span><span class="content">second minute hour day</span><span class="delimiter">]</span></span>.include?(interval)
-  debounce(<span class="key">for</span>: interval, <span class="key">leading</span>: <span class="predefined-constant">true</span>, <span class="key">id</span>: id, &amp;block)
+  debounce(<span class="key">for</span>: interval, <span class="key">leading</span>: <span class="predefined-constant">true</span>, <span class="key">id</span>:, &amp;)
 <span class="keyword">end</span></pre>
     </td>
   </tr>
@@ -4637,13 +6250,13 @@ for method calls inside the block</p>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
       <pre class="example code"><code>persistence(<span class="symbol">:influxdb</span>) <span class="keyword">do</span>
   <span class="constant">Item1</span>.persist
-  <span class="constant">Item1</span>.changed_since(<span class="integer">1</span>.hour)
-  <span class="constant">Item1</span>.average_since(<span class="integer">12</span>.hours)
+  <span class="constant">Item1</span>.changed_since?(<span class="integer">1</span>.hour.ago)
+  <span class="constant">Item1</span>.average_since(<span class="integer">12</span>.hours.ago)
 <span class="keyword">end</span></code></pre>
     
   </div>
@@ -4717,15 +6330,15 @@ for method calls inside the block</p>
       <pre class="lines">
 
 
-620
-621
-622
-623
-624
-625</pre>
+750
+751
+752
+753
+754
+755</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 620</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 750</span>
 
 <span class="keyword">def</span> <span class="function">persistence</span>(service)
   old = persistence!(service)
@@ -4821,14 +6434,14 @@ the system's default persistence service.</p>
       <pre class="lines">
 
 
-642
-643
-644
-645
-646</pre>
+772
+773
+774
+775
+776</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 642</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 772</span>
 
 <span class="keyword">def</span> <span class="function">persistence!</span>(service = <span class="predefined-constant">nil</span>)
   old = <span class="constant">Thread</span>.current[<span class="symbol">:openhab_persistence_service</span>]
@@ -4843,7 +6456,7 @@ the system's default persistence service.</p>
       <div class="method_details ">
   <h3 class="signature " id="profile-class_method">
   
-    .<strong>profile</strong>(id) {|event, command: nil, state: nil, link:, item:, channel_uid:, configuration:, context:| ... } &#x21d2; <tt>void</tt> 
+    .<strong>profile</strong>(id, label: nil, type: :state, config_description: nil) {|event, command: nil, state: nil, trigger: nil, time_series: nil, callback:, link:, item:, channel_uid:, configuration:, context:| ... } &#x21d2; <tt>void</tt> 
   
 
   
@@ -4852,6 +6465,8 @@ the system's default persistence service.</p>
 </h3><div class="docstring">
   <div class="discussion">
     <p class="note returns_void">This method returns an undefined value.</p><p>Defines a new profile that can be applied to item channel links.</p>
+<p>To create a profile that can be used in the UI, provide a label and optionally a <span class='object_link'><a href="#config_description-class_method" title="OpenHAB::DSL.config_description (method)">config_description</a></span>,
+otherwise the profile will not be visible in the UI.</p>
 
 
   </div>
@@ -4859,11 +6474,11 @@ the system's default persistence service.</p>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
-        <p class="example_title"><div class='inline'><p>Vetoing a command</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Vetoing a command</p>
+</div></h5>
       
       <pre class="example code"><code>profile(<span class="symbol">:veto_closing_shades</span>) <span class="keyword">do</span> |event, <span class="key">item</span>:, <span class="key">command</span>:|
   <span class="keyword">next</span> <span class="predefined-constant">false</span> <span class="keyword">if</span> command&amp;.down?
@@ -4880,13 +6495,13 @@ items.build <span class="keyword">do</span>
 <span class="comment"># Rollershutter MyShade { channel=&quot;thing:rollershutter&quot;[profile=&quot;ruby:veto_closing_shades&quot;] }</span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Overriding units from a binding</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Overriding units from a binding</p>
+</div></h5>
       
-      <pre class="example code"><code>profile(<span class="symbol">:set_uom</span>) <span class="keyword">do</span> |event, <span class="key">configuration</span>:, <span class="key">state</span>:, <span class="key">command</span>:|
+      <pre class="example code"><code>profile(<span class="symbol">:set_uom</span>) <span class="keyword">do</span> |event, <span class="key">callback</span>:, <span class="key">configuration</span>:, <span class="key">state</span>:, <span class="key">command</span>:|
   <span class="keyword">unless</span> configuration[<span class="string"><span class="delimiter">&quot;</span><span class="content">unit</span><span class="delimiter">&quot;</span></span>]
     logger.warn(<span class="string"><span class="delimiter">&quot;</span><span class="content">Unit configuration not provided for set_uom profile</span><span class="delimiter">&quot;</span></span>)
-     <span class="keyword">next</span> <span class="predefined-constant">true</span>
+    <span class="keyword">next</span> <span class="predefined-constant">true</span>
   <span class="keyword">end</span>
 
   <span class="keyword">case</span> event
@@ -4909,6 +6524,21 @@ items.build <span class="keyword">do</span>
 <span class="comment"># can also be referenced from an `.items` file:</span>
 <span class="comment"># Number:Temperature MyTempWithNonUnitValueFromBinding &quot;I prefer Celsius [%d °C]&quot; { channel=&quot;something_that_returns_F&quot;[profile=&quot;ruby:set_uom&quot;, unit=&quot;°F&quot;] }</span></code></pre>
     
+      
+        <h5 class="example_title"><div class='inline'><p>Create a profile that is usable in the UI</p>
+</div></h5>
+      
+      <pre class="example code"><code>config_description = config_description <span class="keyword">do</span>
+  parameter <span class="symbol">:min</span>, <span class="symbol">:decimal</span>, <span class="key">label</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Minimum</span><span class="delimiter">&quot;</span></span>, <span class="key">description</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Minimum value</span><span class="delimiter">&quot;</span></span>
+  parameter <span class="symbol">:max</span>, <span class="symbol">:decimal</span>, <span class="key">label</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Maximum</span><span class="delimiter">&quot;</span></span>, <span class="key">description</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Maximum value</span><span class="delimiter">&quot;</span></span>
+<span class="keyword">end</span>
+
+profile(<span class="symbol">:range_filter</span>, <span class="key">label</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Range Filter</span><span class="delimiter">&quot;</span></span>, <span class="key">config_description</span>: config_description) <span class="keyword">do</span> |event, <span class="key">state</span>:, <span class="key">configuration</span>:|
+  <span class="keyword">next</span> <span class="predefined-constant">true</span> <span class="keyword">unless</span> event == <span class="symbol">:state_from_handler</span>
+
+  (configuration[<span class="string"><span class="delimiter">&quot;</span><span class="content">min</span><span class="delimiter">&quot;</span></span>]..configuration[<span class="string"><span class="delimiter">&quot;</span><span class="content">max</span><span class="delimiter">&quot;</span></span>]).cover?(state)
+<span class="keyword">end</span></code></pre>
+    
   </div>
 <p class="tag_title">Parameters:</p>
 <ul class="param">
@@ -4928,6 +6558,57 @@ items.build <span class="keyword">do</span>
       
     </li>
   
+    <li>
+      
+        <span class='name'>label</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt>nil</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>The label for the profile. When nil, the profile will not be visible in the UI.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>type</span>
+      
+      
+        <span class='type'>(<tt>:state</tt>, <tt>:trigger</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>:state</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>The type of profile.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>config_description</span>
+      
+      
+        <span class='type'>(<tt><a href="https://www.openhab.org/javadoc/latest/org/openhab/core/config/core/ConfigDescription.html" target="_parent" title="org.openhab.core.config.core.ConfigDescription">org.openhab.core.config.core.ConfigDescription</a></tt>, <tt>nil</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>The configuration description for the profile so that it can be configured in the UI.</p>
+</div>
+      
+    </li>
+  
 </ul>
 
 <p class="tag_title">Yields:</p>
@@ -4936,7 +6617,7 @@ items.build <span class="keyword">do</span>
     <li>
       
       
-        <span class='type'>(<tt>event</tt>, <tt>command: nil</tt>, <tt>state: nil</tt>, <tt>link:</tt>, <tt>item:</tt>, <tt>channel_uid:</tt>, <tt>configuration:</tt>, <tt>context:</tt>)</span>
+        <span class='type'>(<tt>event</tt>, <tt>command: nil</tt>, <tt>state: nil</tt>, <tt>trigger: nil</tt>, <tt>time_series: nil</tt>, <tt>callback:</tt>, <tt>link:</tt>, <tt>item:</tt>, <tt>channel_uid:</tt>, <tt>configuration:</tt>, <tt>context:</tt>)</span>
       
       
       
@@ -4952,25 +6633,10 @@ items.build <span class="keyword">do</span>
   
     <li>
       
-        <span class='name'>callback</span>
-      
-      
-        <span class='type'>(<tt><span class='object_link'><a href="Core/Things/ProfileCallback.html" title="OpenHAB::Core::Things::ProfileCallback (module)">Core::Things::ProfileCallback</a></span></tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'><p>The callback to be used to customize the action taken.</p>
-</div>
-      
-    </li>
-  
-    <li>
-      
         <span class='name'>event</span>
       
       
-        <span class='type'>(<tt>:command_from_item</tt>, <tt>:state_from_item</tt>, <tt>:command_from_handler</tt>, <tt>:state_from_handler</tt>)</span>
+        <span class='type'>(<tt>:command_from_item</tt>, <tt>:state_from_item</tt>, <tt>:command_from_handler</tt>, <tt>:state_from_handler</tt>, <tt>:time_series_from_handler</tt>, <tt>:trigger_from_handler</tt>)</span>
       
       
       
@@ -5006,6 +6672,52 @@ items.build <span class="keyword">do</span>
       
         &mdash;
         <div class='inline'><p>The state being sent for <code>:state_from_item</code> and <code>:state_from_handler</code> events.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>trigger</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>The event being sent for <code>:trigger_from_handler</code> events.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>time_series</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Core/Types/TimeSeries.html" title="OpenHAB::Core::Types::TimeSeries (class)">TimeSeries</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>The time series for <code>:time_series_from_handler</code> events.
+Only available since openHAB 4.1.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>callback</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Core/Things/ProfileCallback.html" title="OpenHAB::Core::Things::ProfileCallback (module)">Core::Things::ProfileCallback</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>The callback to be used to customize the action taken.</p>
 </div>
       
     </li>
@@ -5085,6 +6797,22 @@ items.build <span class="keyword">do</span>
       
     </li>
   
+    <li>
+      
+        <span class='name'>source</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Core/Events/Source.html" title="OpenHAB::Core::Events::Source (class)">Core::Events::Source</a></span></tt>, <tt>nil</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>The source of the event.
+@since openHAB 5.1</p>
+</div>
+      
+    </li>
+  
 </ul>
 <p class="tag_title">Yield Returns:</p>
 <ul class="yieldreturn">
@@ -5120,9 +6848,13 @@ items.build <span class="keyword">do</span>
   <p class="tag_title">See Also:</p>
   <ul class="see">
     
-      <li>org.openhab.thing.Profile</li>
+      <li><a href="https://www.openhab.org/javadoc/latest/org/openhab/core/thing/profiles/Profile.html" target="_parent" title="org.openhab.core.thing.profiles.Profile">org.openhab.core.thing.profiles.Profile</a></li>
     
-      <li>org.openhab.thing.StateProfile</li>
+      <li><a href="https://www.openhab.org/javadoc/latest/org/openhab/core/thing/profiles/StateProfile.html" target="_parent" title="org.openhab.core.thing.profiles.StateProfile">org.openhab.core.thing.profiles.StateProfile</a></li>
+    
+      <li><a href="https://www.openhab.org/javadoc/latest/org/openhab/core/thing/profiles/TimeSeriesProfile.html" target="_parent" title="org.openhab.core.thing.profiles.TimeSeriesProfile">org.openhab.core.thing.profiles.TimeSeriesProfile</a></li>
+    
+      <li><a href="https://www.openhab.org/javadoc/latest/org/openhab/core/thing/profiles/TriggerProfile.html" target="_parent" title="org.openhab.core.thing.profiles.TriggerProfile">org.openhab.core.thing.profiles.TriggerProfile</a></li>
     
   </ul>
 
@@ -5132,28 +6864,26 @@ items.build <span class="keyword">do</span>
       <pre class="lines">
 
 
-139
-140
-141
-142
-143
-144
-145
-146
-147
-148</pre>
+223
+224
+225
+226
+227
+228
+229
+230
+231</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 139</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 223</span>
 
-<span class="keyword">def</span> <span class="function">profile</span>(id, &amp;block)
+<span class="keyword">def</span> <span class="function">profile</span>(id, <span class="key">label</span>: <span class="predefined-constant">nil</span>, <span class="key">type</span>: <span class="symbol">:state</span>, <span class="key">config_description</span>: <span class="predefined-constant">nil</span>, &amp;block)
   raise <span class="constant">ArgumentError</span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">Block is required</span><span class="delimiter">&quot;</span></span> <span class="keyword">unless</span> block
 
   id = id.to_s
-  uid = org.openhab.core.thing.profiles.ProfileTypeUID.new(<span class="string"><span class="delimiter">&quot;</span><span class="content">ruby</span><span class="delimiter">&quot;</span></span>, id)
 
   <span class="constant">ThreadLocal</span>.thread_local(<span class="key">openhab_rule_type</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">profile</span><span class="delimiter">&quot;</span></span>, <span class="key">openhab_rule_uid</span>: id) <span class="keyword">do</span>
-    <span class="constant">Core</span>::<span class="constant">ProfileFactory</span>.instance.register(uid, block)
+    <span class="constant">Core</span>::<span class="constant">ProfileFactory</span>.instance.register(id, block, <span class="key">label</span>:, <span class="key">type</span>:, <span class="key">config_description</span>:)
   <span class="keyword">end</span>
 <span class="keyword">end</span></pre>
     </td>
@@ -5180,7 +6910,7 @@ items.build <span class="keyword">do</span>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
       <pre class="example code"><code>provider(<span class="key">metadata</span>: <span class="symbol">:persistent</span>) <span class="keyword">do</span>
@@ -5298,19 +7028,19 @@ recommended that you use a Proc, not a Lambda, for permissive argument matching.
       <pre class="lines">
 
 
-796
-797
-798
-799
-800
-801
-802
-803
-804
-805</pre>
+926
+927
+928
+929
+930
+931
+932
+933
+934
+935</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 796</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 926</span>
 
 <span class="keyword">def</span> <span class="function">provider</span>(*providers, **providers_by_type)
   raise <span class="constant">ArgumentError</span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">You must give a block to set the provider for the duration of</span><span class="delimiter">&quot;</span></span> <span class="keyword">unless</span> block_given?
@@ -5330,7 +7060,7 @@ recommended that you use a Proc, not a Lambda, for permissive argument matching.
       <div class="method_details ">
   <h3 class="signature " id="provider!-class_method">
   
-    .<strong>provider!</strong>(things: nil, items: nil, metadata: nil, links: nil, **metadata_items)  &#x21d2; <tt>void</tt> 
+    .<strong>provider!</strong>(things: nil, items: nil, metadata: nil, links: nil, **metadata_items)  &#x21d2; <tt>Hash</tt> 
   
 
   
@@ -5348,7 +7078,7 @@ properly restored.</p>
 </div>
   </div>
 
-<p class="note returns_void">This method returns an undefined value.</p><p>Permanently set the implicit provider(s) for this thread.</p>
+<p>Permanently set the implicit provider(s) for this thread.</p>
 <p><span class='object_link'><a href="#provider!-class_method" title="OpenHAB::DSL.provider! (method)">provider!</a></span> calls are cumulative - additional calls will not erase the effects
 of previous calls unless they are for the same provider type.</p>
 
@@ -5400,6 +7130,23 @@ recommended that you use a Proc, not a Lambda, for permissive argument matching.
   
 </ul>
 
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>the prior provider configuration.</p>
+</div>
+      
+    </li>
+  
+</ul>
 
   <p class="tag_title">See Also:</p>
   <ul class="see">
@@ -5416,69 +7163,69 @@ recommended that you use a Proc, not a Lambda, for permissive argument matching.
       <pre class="lines">
 
 
-838
-839
-840
-841
-842
-843
-844
-845
-846
-847
-848
-849
-850
-851
-852
-853
-854
-855
-856
-857
-858
-859
-860
-861
-862
-863
-864
-865
-866
-867
-868
-869
-870
-871
-872
-873
-874
-875
-876
-877
-878
-879
-880
-881
-882
-883
-884
-885
-886
-887
-888
-889
-890
-891
-892
-893
-894
-895
-896
-897</pre>
+968
+969
+970
+971
+972
+973
+974
+975
+976
+977
+978
+979
+980
+981
+982
+983
+984
+985
+986
+987
+988
+989
+990
+991
+992
+993
+994
+995
+996
+997
+998
+999
+1000
+1001
+1002
+1003
+1004
+1005
+1006
+1007
+1008
+1009
+1010
+1011
+1012
+1013
+1014
+1015
+1016
+1017
+1018
+1019
+1020
+1021
+1022
+1023
+1024
+1025
+1026
+1027</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 838</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 968</span>
 
 <span class="keyword">def</span> <span class="function">provider!</span>(*providers, **providers_by_type)
   thread_providers = <span class="constant">Thread</span>.current[<span class="symbol">:openhab_providers</span>] ||= {}
@@ -5548,7 +7295,7 @@ recommended that you use a Proc, not a Lambda, for permissive argument matching.
       <div class="method_details ">
   <h3 class="signature " id="rule-class_method">
   
-    .<strong>rule</strong>(name = nil, **kwargs) {|rule| ... } &#x21d2; <tt><span class='object_link'><a href="Core/Rules/Rule.html" title="OpenHAB::Core::Rules::Rule (module)">Core::Rules::Rule</a></span></tt><sup>?</sup> 
+    .<strong>rule</strong>(name = nil, id: nil) {|rule| ... } &#x21d2; <tt><span class='object_link'><a href="Core/Rules/Rule.html" title="OpenHAB::Core::Rules::Rule (module)">Core::Rules::Rule</a></span></tt><sup>?</sup> 
   
 
   
@@ -5558,7 +7305,13 @@ recommended that you use a Proc, not a Lambda, for permissive argument matching.
   <div class="discussion">
     <p>Create a new rule</p>
 <p>The rule must have at least one trigger and one execution block.
-To create a "script" without any triggers, use <span class='object_link'>#script</span>.</p>
+To create a "script" without any triggers, use <span class='object_link'><a href="#script-class_method" title="OpenHAB::DSL.script (method)">script</a></span>.</p>
+<p>When explicit <code>id</code> is not provided, the rule's ID will be inferred from the block's source location,
+and a suffix will be added to avoid clashing against existing rules.</p>
+<p>When an explicit <code>id</code> is provided and an existing rule with the same id already exists,
+the rule will not be created, and the method will return nil.</p>
+<p>To ensure that a rule is created even when the same id already exists, use <span class='object_link'><a href="#rule!-class_method" title="OpenHAB::DSL.rule! (method)">rule!</a></span> or call
+<span class='object_link'><a href="Core/Rules/Registry.html#remove-instance_method" title="OpenHAB::Core::Rules::Registry#remove (method)">rules.remove</a></span> to remove any existing rule prior to creating the new rule.</p>
 
 
   </div>
@@ -5566,15 +7319,22 @@ To create a "script" without any triggers, use <span class='object_link'>#script
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
-      <pre class="example code"><code>require <span class="string"><span class="delimiter">&quot;</span><span class="content">openhab/dsl</span><span class="delimiter">&quot;</span></span>
-
-rule <span class="string"><span class="delimiter">&quot;</span><span class="content">name</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
+      <pre class="example code"><code>rule <span class="string"><span class="delimiter">&quot;</span><span class="content">name</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
   &lt;one <span class="keyword">or</span> more triggers&gt;
   &lt;one <span class="keyword">or</span> more execution blocks&gt;
   &lt;zero <span class="keyword">or</span> more guards&gt;
+<span class="keyword">end</span></code></pre>
+    
+      
+        <h5 class="example_title"><div class='inline'><p>Create a rule with an explicit id, deleting any existing rule with the same id</p>
+</div></h5>
+      
+      <pre class="example code"><code>rule! <span class="string"><span class="delimiter">&quot;</span><span class="content">name</span><span class="delimiter">&quot;</span></span>, <span class="key">id</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">my_happy_day_reminder</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
+  every <span class="symbol">:day</span>
+  run { logger.info <span class="string"><span class="delimiter">&quot;</span><span class="content">Happy new day!</span><span class="delimiter">&quot;</span></span> }
 <span class="keyword">end</span></code></pre>
     
   </div>
@@ -5594,6 +7354,23 @@ rule <span class="string"><span class="delimiter">&quot;</span><span class="cont
       
         &mdash;
         <div class='inline'><p>The rule name</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>The rule's ID. This can also be defined in the block using <span class='object_link'><a href="DSL/Rules/BuilderDSL.html#uid-instance_method" title="OpenHAB::DSL::Rules::BuilderDSL#uid (method)">uid</a></span>.</p>
 </div>
       
     </li>
@@ -5661,6 +7438,8 @@ rule <span class="string"><span class="delimiter">&quot;</span><span class="cont
     
       <li><span class='object_link'><a href="DSL/Rules/Terse.html" title="OpenHAB::DSL::Rules::Terse (module)">Terse Rules</a></span></li>
     
+      <li><span class='object_link'><a href="#rule!-class_method" title="OpenHAB::DSL.rule! (method)">rule!</a></span></li>
+    
   </ul>
 
 </div><table class="source_code">
@@ -5669,15 +7448,62 @@ rule <span class="string"><span class="delimiter">&quot;</span><span class="cont
       <pre class="lines">
 
 
-58
-59
-60</pre>
+87
+88
+89</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 58</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 87</span>
 
-<span class="keyword">def</span> <span class="function">rule</span>(name = <span class="predefined-constant">nil</span>, **kwargs, &amp;block)
-  rules.build { rule(name, **kwargs, &amp;block) }
+<span class="keyword">def</span> <span class="function">rule</span>(name = <span class="predefined-constant">nil</span>, <span class="key">id</span>: <span class="predefined-constant">nil</span>, **, &amp;)
+  rules.build { rule(name, <span class="key">id</span>:, **, &amp;) }
+<span class="keyword">end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="rule!-class_method">
+  
+    .<strong>rule!</strong>(name = nil, id: nil)  &#x21d2; <tt><span class='object_link'>Object</span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Creates a rule that will remove existing rules with the same id, even when the id has been inferred.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#rule-class_method" title="OpenHAB::DSL.rule (method)">rule</a></span></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+93
+94
+95</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 93</span>
+
+<span class="keyword">def</span> <span class="function">rule!</span>(name = <span class="predefined-constant">nil</span>, <span class="key">id</span>: <span class="predefined-constant">nil</span>, **, &amp;)
+  rules.build { rule(name, <span class="key">id</span>:, <span class="key">replace</span>: <span class="predefined-constant">true</span>, **, &amp;) }
 <span class="keyword">end</span></pre>
     </td>
   </tr>
@@ -5722,12 +7548,12 @@ rule <span class="string"><span class="delimiter">&quot;</span><span class="cont
       <pre class="lines">
 
 
-170
-171
-172</pre>
+286
+287
+288</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 170</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 286</span>
 
 <span class="keyword">def</span> <span class="function">rules</span>
   <span class="constant">Core</span>::<span class="constant">Rules</span>::<span class="constant">Registry</span>.instance
@@ -5738,9 +7564,9 @@ rule <span class="string"><span class="delimiter">&quot;</span><span class="cont
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="script-class_method">
+  <h3 class="signature " id="scene-class_method">
   
-    .<strong>script</strong>(name = nil, id: nil, **kwargs) { ... } &#x21d2; <tt><span class='object_link'><a href="Core/Rules/Rule.html" title="OpenHAB::Core::Rules::Rule (module)">Core::Rules::Rule</a></span></tt> 
+    .<strong>scene</strong>(name = nil, description: nil, id: nil, tag: nil, tags: nil) { ... } &#x21d2; <tt><span class='object_link'><a href="Core/Rules/Rule.html" title="OpenHAB::Core::Rules::Rule (module)">Core::Rules::Rule</a></span></tt><sup>?</sup> 
   
 
   
@@ -5748,8 +7574,8 @@ rule <span class="string"><span class="delimiter">&quot;</span><span class="cont
   
 </h3><div class="docstring">
   <div class="discussion">
-    <p>Create a new script</p>
-<p>A script is a rule with no triggers. It can be called by various other actions,
+    <p>Create a new scene</p>
+<p>A scene is a rule with no triggers. It can be called by various other actions,
 such as the Run Rules action.</p>
 
 
@@ -5771,7 +7597,24 @@ such as the Run Rules action.</p>
       
       
         &mdash;
-        <div class='inline'><p>A descriptive name</p>
+        <div class='inline'><p>A name for the scene</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>description</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>A description of the scene</p>
 </div>
       
     </li>
@@ -5789,6 +7632,40 @@ such as the Run Rules action.</p>
       
         &mdash;
         <div class='inline'><p>The script's ID</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>tag</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt><span class='object_link'><a href="../Symbol.html" title="Symbol (class)">Symbol</a></span></tt>, <tt>Semantics::Tag</tt>, <tt><span class='object_link'><a href="../Array.html" title="Array (class)">Array</a></span>&lt;String, <span class='object_link'><a href="../Symbol.html" title="Symbol (class)">Symbol</a></span>, Semantics::Tag&gt;</tt>, <tt>nil</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>Tags to assign to the script</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>tags</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt><span class='object_link'><a href="../Symbol.html" title="Symbol (class)">Symbol</a></span></tt>, <tt>Semantics::Tag</tt>, <tt><span class='object_link'><a href="../Array.html" title="Array (class)">Array</a></span>&lt;String, <span class='object_link'><a href="../Symbol.html" title="Symbol (class)">Symbol</a></span>, Semantics::Tag&gt;</tt>, <tt>nil</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>Fluent alias for <code>tag</code></p>
 </div>
       
     </li>
@@ -5818,7 +7695,7 @@ such as the Run Rules action.</p>
     <li>
       
       
-        <span class='type'>(<tt><span class='object_link'><a href="Core/Rules/Rule.html" title="OpenHAB::Core::Rules::Rule (module)">Core::Rules::Rule</a></span></tt>)</span>
+        <span class='type'>(<tt><span class='object_link'><a href="Core/Rules/Rule.html" title="OpenHAB::Core::Rules::Rule (module)">Core::Rules::Rule</a></span></tt>, <tt>nil</tt>)</span>
       
       
       
@@ -5826,21 +7703,338 @@ such as the Run Rules action.</p>
   
 </ul>
 
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#rule-class_method" title="OpenHAB::DSL.rule (method)">rule</a></span></li>
+    
+      <li><span class='object_link'><a href="#scene!-class_method" title="OpenHAB::DSL.scene! (method)">scene!</a></span></li>
+    
+  </ul>
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-63
-64
-65</pre>
+98
+99
+100</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 63</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 98</span>
 
-<span class="keyword">def</span> <span class="function">script</span>(name = <span class="predefined-constant">nil</span>, <span class="key">id</span>: <span class="predefined-constant">nil</span>, **kwargs, &amp;block)
-  rules.build { script(name, <span class="key">id</span>: id, **kwargs, &amp;block) }
+<span class="keyword">def</span> <span class="function">scene</span>(name = <span class="predefined-constant">nil</span>, <span class="key">description</span>: <span class="predefined-constant">nil</span>, <span class="key">id</span>: <span class="predefined-constant">nil</span>, <span class="key">tag</span>: <span class="predefined-constant">nil</span>, <span class="key">tags</span>: <span class="predefined-constant">nil</span>, **, &amp;)
+  rules.build { scene(name, <span class="key">description</span>:, <span class="key">id</span>:, <span class="key">tag</span>:, <span class="key">tags</span>:, **, &amp;) }
+<span class="keyword">end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="scene!-class_method">
+  
+    .<strong>scene!</strong>(name = nil, description: nil, id: nil, tag: nil, tags: nil)  &#x21d2; <tt><span class='object_link'>Object</span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Creates a scene that will remove existing rules/scenes with the same id, even when the id has been inferred.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#scene-class_method" title="OpenHAB::DSL.scene (method)">scene</a></span></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+104
+105
+106
+107
+108</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 104</span>
+
+<span class="keyword">def</span> <span class="function">scene!</span>(name = <span class="predefined-constant">nil</span>, <span class="key">description</span>: <span class="predefined-constant">nil</span>, <span class="key">id</span>: <span class="predefined-constant">nil</span>, <span class="key">tag</span>: <span class="predefined-constant">nil</span>, <span class="key">tags</span>: <span class="predefined-constant">nil</span>, **, &amp;)
+  rules.build <span class="keyword">do</span>
+    scene(name, <span class="key">description</span>:, <span class="key">id</span>:, <span class="key">tag</span>:, <span class="key">tags</span>:, <span class="key">replace</span>: <span class="predefined-constant">true</span>, **, &amp;)
+  <span class="keyword">end</span>
+<span class="keyword">end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="script-class_method">
+  
+    .<strong>script</strong>(name = nil, description: nil, id: nil, tag: nil, tags: nil) { ... } &#x21d2; <tt><span class='object_link'><a href="Core/Rules/Rule.html" title="OpenHAB::Core::Rules::Rule (module)">Core::Rules::Rule</a></span></tt><sup>?</sup> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Create a new script</p>
+<p>A script is a rule with no triggers. It can be called by various other actions,
+such as the Run Rules action, or by calling <span class='object_link'><a href="Core/Rules/Rule.html#trigger-instance_method" title="OpenHAB::Core::Rules::Rule#trigger (method)">Core::Rules::Rule#trigger</a></span>.</p>
+<p>Scripts can be executed with some additional context, similar to method parameters
+(see <span class='object_link'><a href="Core/Rules/Rule.html#trigger-instance_method" title="OpenHAB::Core::Rules::Rule#trigger (method)">Core::Rules::Rule#trigger</a></span>).
+The context can be accessed from within the script's execution block as a "local" variable.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <h4 class="tag_title">Examples:</h4>
+    
+      
+        <h5 class="example_title"><div class='inline'><p>A simple script</p>
+</div></h5>
+      
+      <pre class="example code"><code><span class="comment"># return the script object into a variable</span>
+door_check = script <span class="string"><span class="delimiter">&quot;</span><span class="content">Check all doors</span><span class="delimiter">&quot;</span></span>, <span class="key">id</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">door_check</span><span class="delimiter">&quot;</span></span>, <span class="key">tags</span>: <span class="symbol">:security</span> <span class="keyword">do</span>
+  open_doors = gDoors.members.select(&amp;<span class="symbol">:open?</span>).map(&amp;<span class="symbol">:label</span>).join(<span class="string"><span class="delimiter">&quot;</span><span class="content">, </span><span class="delimiter">&quot;</span></span>)
+  <span class="constant">Notification</span>.send(<span class="string"><span class="delimiter">&quot;</span><span class="content">The following doors are open: </span><span class="inline"><span class="inline-delimiter">#{</span>open_doors<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span>) <span class="keyword">unless</span> open_doors.empty?
+<span class="keyword">end</span>
+
+<span class="comment"># run is an alias of trigger</span>
+door_check.run</code></pre>
+    
+      
+        <h5 class="example_title"><div class='inline'><p>A script with context</p>
+</div></h5>
+      
+      <pre class="example code"><code><span class="comment"># This script expects to be called with `message` as context/parameter</span>
+<span class="constant">DESTINATION_EMAIL</span> = <span class="string"><span class="delimiter">&quot;</span><span class="content">myemail@example.com</span><span class="delimiter">&quot;</span></span>
+script <span class="string"><span class="delimiter">&quot;</span><span class="content">Send Notifications</span><span class="delimiter">&quot;</span></span>, <span class="key">id</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">send_alert</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
+  <span class="constant">Notification</span>.send(message)
+  things[<span class="string"><span class="delimiter">&quot;</span><span class="content">mail:smtp:local</span><span class="delimiter">&quot;</span></span>].send_mail(<span class="constant">DESTINATION_EMAIL</span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">OpenHAB Alert</span><span class="delimiter">&quot;</span></span>, message)
+<span class="keyword">end</span>
+
+rules.scripts[<span class="string"><span class="delimiter">&quot;</span><span class="content">send_alert</span><span class="delimiter">&quot;</span></span>].run(<span class="key">message</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">The door is open!</span><span class="delimiter">&quot;</span></span>)</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>A name for the script</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>description</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>A description of the script</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>The script's ID</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>tag</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt><span class='object_link'><a href="../Symbol.html" title="Symbol (class)">Symbol</a></span></tt>, <tt>Semantics::Tag</tt>, <tt><span class='object_link'><a href="../Array.html" title="Array (class)">Array</a></span>&lt;String, <span class='object_link'><a href="../Symbol.html" title="Symbol (class)">Symbol</a></span>, Semantics::Tag&gt;</tt>, <tt>nil</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>Tags to assign to the script</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>tags</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt><span class='object_link'><a href="../Symbol.html" title="Symbol (class)">Symbol</a></span></tt>, <tt>Semantics::Tag</tt>, <tt><span class='object_link'><a href="../Array.html" title="Array (class)">Array</a></span>&lt;String, <span class='object_link'><a href="../Symbol.html" title="Symbol (class)">Symbol</a></span>, Semantics::Tag&gt;</tt>, <tt>nil</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>Fluent alias for <code>tag</code></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'><p>[] Block executed when the script is executed.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Core/Rules/Rule.html" title="OpenHAB::Core::Rules::Rule (module)">Core::Rules::Rule</a></span></tt>, <tt>nil</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#rule-class_method" title="OpenHAB::DSL.rule (method)">rule</a></span></li>
+    
+      <li><span class='object_link'><a href="Core/Rules/Rule.html#trigger-instance_method" title="OpenHAB::Core::Rules::Rule#trigger (method)">Core::Rules::Rule#trigger</a></span></li>
+    
+      <li><span class='object_link'><a href="#script!-class_method" title="OpenHAB::DSL.script! (method)">script!</a></span></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+111
+112
+113</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 111</span>
+
+<span class="keyword">def</span> <span class="function">script</span>(name = <span class="predefined-constant">nil</span>, <span class="key">description</span>: <span class="predefined-constant">nil</span>, <span class="key">id</span>: <span class="predefined-constant">nil</span>, <span class="key">tag</span>: <span class="predefined-constant">nil</span>, <span class="key">tags</span>: <span class="predefined-constant">nil</span>, **, &amp;)
+  rules.build { script(name, <span class="key">description</span>:, <span class="key">id</span>:, <span class="key">tag</span>:, <span class="key">tags</span>:, **, &amp;) }
+<span class="keyword">end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="script!-class_method">
+  
+    .<strong>script!</strong>(name = nil, description: nil, id: nil, tag: nil, tags: nil)  &#x21d2; <tt><span class='object_link'>Object</span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Creates a script that will remove existing rules/scripts with the same id, even when the id has been inferred.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#script-class_method" title="OpenHAB::DSL.script (method)">script</a></span></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+117
+118
+119
+120
+121</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 117</span>
+
+<span class="keyword">def</span> <span class="function">script!</span>(name = <span class="predefined-constant">nil</span>, <span class="key">description</span>: <span class="predefined-constant">nil</span>, <span class="key">id</span>: <span class="predefined-constant">nil</span>, <span class="key">tag</span>: <span class="predefined-constant">nil</span>, <span class="key">tags</span>: <span class="predefined-constant">nil</span>, **, &amp;)
+  rules.build <span class="keyword">do</span>
+    script(name, <span class="key">description</span>:, <span class="key">id</span>:, <span class="key">tag</span>:, <span class="key">tags</span>:, <span class="key">replace</span>: <span class="predefined-constant">true</span>, **, &amp;)
+  <span class="keyword">end</span>
 <span class="keyword">end</span></pre>
     </td>
   </tr>
@@ -5869,10 +8063,10 @@ For a private cache, simply use an instance variable. See
 
   <div class="note notetag">
     <strong>Note:</strong>
-    <div class='inline'><p>Because every script or UI rule gets it own JRuby engine instance,
+    <div class='inline'><p>Because every script or UI rule gets its own JRuby engine instance,
 you cannot rely on being able to access Ruby objects between them. Only
 objects that implement a Java interface that's part of Java or openHAB
-Core (such as Hash implements <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html" target="_parent" title="java.util.Map">java.util.Map</a>, or other basic
+Core (such as Hash implements <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html" target="_parent" title="java.util.Map">java.util.Map</a>, or other basic
 datatypes) can be reliably stored and accessed from the shared cache.
 Likewise, you can use the cache to access data from other scripting
 languages, but they'll be all but useless in Ruby. It's best to stick
@@ -5897,7 +8091,7 @@ removed.</p>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
       <pre class="example code"><code>shared_cache.compute_if_absent(<span class="symbol">:execution_count</span>) { <span class="integer">0</span> }
@@ -5938,15 +8132,67 @@ shared_cache[<span class="symbol">:execution_count</span>] += <span class="integ
       <pre class="lines">
 
 
-161
-162
-163</pre>
+277
+278
+279</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 161</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 277</span>
 
 <span class="keyword">def</span> <span class="function">shared_cache</span>
   <span class="global-variable">$sharedCache</span>
+<span class="keyword">end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="sitemaps-class_method">
+  
+    .<strong>sitemaps</strong>  &#x21d2; <tt><span class='object_link'><a href="Core/Sitemaps/Registry.html" title="OpenHAB::Core::Sitemaps::Registry (class)">Core::Sitemaps::Registry</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Core/Sitemaps/Registry.html" title="OpenHAB::Core::Sitemaps::Registry (class)">Core::Sitemaps::Registry</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+291
+292
+293</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 291</span>
+
+<span class="keyword">def</span> <span class="function">sitemaps</span>
+  <span class="constant">Core</span>::<span class="constant">Sitemaps</span>::<span class="constant">Registry</span>.instance
 <span class="keyword">end</span></pre>
     </td>
   </tr>
@@ -5975,7 +8221,7 @@ current state of each item. It is implemented by calling openHAB's
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
       <pre class="example code"><code>states = store_states <span class="constant">Item1</span>, <span class="constant">Item2</span>
@@ -5983,8 +8229,8 @@ current state of each item. It is implemented by calling openHAB's
 states.restore</code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>With a block</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>With a block</p>
+</div></h5>
       
       <pre class="example code"><code>store_states <span class="constant">Item1</span>, <span class="constant">Item2</span> <span class="keyword">do</span>
   ...
@@ -6035,17 +8281,17 @@ states.restore</code></pre>
       <pre class="lines">
 
 
-534
-535
-536
-537
-538
-539
-540
-541</pre>
+626
+627
+628
+629
+630
+631
+632
+633</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 534</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 626</span>
 
 <span class="keyword">def</span> <span class="function">store_states</span>(*items)
   states = <span class="constant">Core</span>::<span class="constant">Items</span>::<span class="constant">StateStorage</span>.from_items(*items)
@@ -6079,7 +8325,7 @@ states.restore</code></pre>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
       <pre class="example code"><code>things.each { |thing| logger.info(<span class="string"><span class="delimiter">&quot;</span><span class="content">Thing: </span><span class="inline"><span class="inline-delimiter">#{</span>thing.uid<span class="inline-delimiter">}</span></span><span class="delimiter">&quot;</span></span>)}
@@ -6116,16 +8362,12 @@ things[<span class="string"><span class="delimiter">'</span><span class="content
       <pre class="lines">
 
 
-225
-226
-227</pre>
+5</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 225</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 5</span>
 
-<span class="keyword">def</span> <span class="function">things</span>
-  <span class="constant">Core</span>::<span class="constant">Things</span>::<span class="constant">Registry</span>.instance
-<span class="keyword">end</span></pre>
+<span class="keyword">def</span> <span class="function">things</span>; <span class="keyword">end</span></pre>
     </td>
   </tr>
 </table>
@@ -6134,7 +8376,7 @@ things[<span class="string"><span class="delimiter">'</span><span class="content
       <div class="method_details ">
   <h3 class="signature " id="throttle_for-class_method">
   
-    .<strong>throttle_for</strong>(duration, id: nil, &amp;block)  &#x21d2; <tt>void</tt> 
+    .<strong>throttle_for</strong>(duration, id: nil) { ... } &#x21d2; <tt>void</tt> 
   
 
   
@@ -6183,21 +8425,6 @@ of time since the first group of triggers occurred before executing the rule.</p
   
     <li>
       
-        <span class='name'>block</span>
-      
-      
-        <span class='type'>(<tt>Block</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'><p>The block to be throttled.</p>
-</div>
-      
-    </li>
-  
-    <li>
-      
         <span class='name'>duration</span>
       
       
@@ -6214,6 +8441,23 @@ executions.</p>
   
 </ul>
 
+<p class="tag_title">Yields:</p>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'><p>The block to be throttled.</p>
+</div>
+      
+    </li>
+  
+</ul>
 
   <p class="tag_title">See Also:</p>
   <ul class="see">
@@ -6230,15 +8474,15 @@ executions.</p>
       <pre class="lines">
 
 
-478
-479
-480</pre>
+570
+571
+572</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 478</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 570</span>
 
-<span class="keyword">def</span> <span class="function">throttle_for</span>(duration, <span class="key">id</span>: <span class="predefined-constant">nil</span>, &amp;block)
-  debounce(<span class="key">for</span>: duration, <span class="key">id</span>: id, &amp;block)
+<span class="keyword">def</span> <span class="function">throttle_for</span>(duration, <span class="key">id</span>: <span class="predefined-constant">nil</span>, &amp;)
+  debounce(<span class="key">for</span>: duration, <span class="key">id</span>:, &amp;)
 <span class="keyword">end</span></pre>
     </td>
   </tr>
@@ -6283,12 +8527,12 @@ executions.</p>
       <pre class="lines">
 
 
-233
-234
-235</pre>
+299
+300
+301</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 233</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 299</span>
 
 <span class="keyword">def</span> <span class="function">timers</span>
   <span class="constant">TimerManager</span>.instance
@@ -6317,11 +8561,11 @@ executions.</p>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
-        <p class="example_title"><div class='inline'><p>Run a transformation</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Run a transformation</p>
+</div></h5>
       
       <pre class="example code"><code>transform(<span class="symbol">:map</span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">myfan.map</span><span class="delimiter">&quot;</span></span>, <span class="integer">0</span>)</code></pre>
     
@@ -6402,12 +8646,12 @@ on the transformation type</p>
       <pre class="lines">
 
 
-483
-484
-485</pre>
+575
+576
+577</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 483</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 575</span>
 
 <span class="keyword">def</span> <span class="function">transform</span>(type, function, value)
   <span class="constant">Transformation</span>.transform(type, function, value)
@@ -6463,11 +8707,11 @@ division.</p>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
-        <p class="example_title"><div class='inline'><p>Arithmetic Operations Between QuantityType and Numeric</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Arithmetic Operations Between QuantityType and Numeric</p>
+</div></h5>
       
       <pre class="example code"><code><span class="comment"># Number:Temperature NumberC = 23 °C</span>
 <span class="comment"># Number:Temperature NumberF = 70 °F</span>
@@ -6486,8 +8730,8 @@ unit(<span class="string"><span class="delimiter">'</span><span class="content">
 unit(<span class="string"><span class="delimiter">'</span><span class="content">°C</span><span class="delimiter">'</span></span>) { [<span class="constant">NumberC</span>.state, <span class="constant">NumberF</span>.state, <span class="constant">Dimensionless</span>.state].min }                <span class="comment"># =&gt; 2</span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Commands and Updates inside a unit block</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Commands and Updates inside a unit block</p>
+</div></h5>
       
       <pre class="example code"><code>unit(<span class="string"><span class="delimiter">'</span><span class="content">°F</span><span class="delimiter">'</span></span>) { <span class="constant">NumberC</span> &lt;&lt; <span class="integer">32</span> }; <span class="constant">NumberC</span>.state                                           <span class="comment"># =&gt; 0 °C</span>
 <span class="comment"># Equivalent to</span>
@@ -6496,8 +8740,8 @@ unit(<span class="string"><span class="delimiter">'</span><span class="content">
 <span class="constant">NumberC</span> &lt;&lt; <span class="integer">32</span> | <span class="string"><span class="delimiter">&quot;</span><span class="content">°F</span><span class="delimiter">&quot;</span></span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Specifying Multiple Units</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Specifying Multiple Units</p>
+</div></h5>
       
       <pre class="example code"><code>unit(<span class="string"><span class="delimiter">&quot;</span><span class="content">°C</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">kW</span><span class="delimiter">&quot;</span></span>) <span class="keyword">do</span>
   <span class="constant">TemperatureItem</span>.update(<span class="string"><span class="delimiter">&quot;</span><span class="content">50 °F</span><span class="delimiter">&quot;</span></span>)
@@ -6578,7 +8822,7 @@ unit(<span class="string"><span class="delimiter">'</span><span class="content">
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
       <pre class="example code"><code>unit(<span class="constant">SIUnits</span>::<span class="constant">METRE</span>.dimension) <span class="comment"># =&gt; ImperialUnits::FOOT</span></code></pre>
@@ -6660,23 +8904,23 @@ unit(<span class="string"><span class="delimiter">'</span><span class="content">
       <pre class="lines">
 
 
-709
-710
-711
-712
-713
-714
-715
-716
-717
-718
-719
-720
-721
-722</pre>
+839
+840
+841
+842
+843
+844
+845
+846
+847
+848
+849
+850
+851
+852</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 709</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 839</span>
 
 <span class="keyword">def</span> <span class="function">unit</span>(*units)
   <span class="keyword">if</span> units.length == <span class="integer">1</span> &amp;&amp; units.first.is_a?(javax.measure.Dimension)
@@ -6746,18 +8990,18 @@ of previous calls unless they are for the same dimension.</p>
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
-        <p class="example_title"><div class='inline'><p>Set several defaults at once</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Set several defaults at once</p>
+</div></h5>
       
       <pre class="example code"><code>unit!(<span class="string"><span class="delimiter">&quot;</span><span class="content">°F</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">ft</span><span class="delimiter">&quot;</span></span>, <span class="string"><span class="delimiter">&quot;</span><span class="content">lbs</span><span class="delimiter">&quot;</span></span>)
 (<span class="integer">50</span> | <span class="string"><span class="delimiter">&quot;</span><span class="content">°F</span><span class="delimiter">&quot;</span></span>) == <span class="integer">50</span> <span class="comment"># =&gt; true</span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Calls are cumulative</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Calls are cumulative</p>
+</div></h5>
       
       <pre class="example code"><code>unit!(<span class="string"><span class="delimiter">&quot;</span><span class="content">°F</span><span class="delimiter">&quot;</span></span>)
 unit!(<span class="string"><span class="delimiter">&quot;</span><span class="content">ft</span><span class="delimiter">&quot;</span></span>)
@@ -6765,8 +9009,8 @@ unit!(<span class="string"><span class="delimiter">&quot;</span><span class="con
 (<span class="integer">2</span> | <span class="string"><span class="delimiter">&quot;</span><span class="content">yd</span><span class="delimiter">&quot;</span></span>) == <span class="integer">6</span> <span class="comment"># =&gt; true</span></code></pre>
     
       
-        <p class="example_title"><div class='inline'><p>Subsequent calls override the same dimension from previous calls</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Subsequent calls override the same dimension from previous calls</p>
+</div></h5>
       
       <pre class="example code"><code>unit!(<span class="string"><span class="delimiter">&quot;</span><span class="content">yd</span><span class="delimiter">&quot;</span></span>)
 unit!(<span class="string"><span class="delimiter">&quot;</span><span class="content">ft</span><span class="delimiter">&quot;</span></span>)
@@ -6810,11 +9054,11 @@ unit!(<span class="string"><span class="delimiter">&quot;</span><span class="con
 <div class="tags">
   
   <div class="examples">
-    <p class="tag_title">Examples:</p>
+    <h4 class="tag_title">Examples:</h4>
     
       
-        <p class="example_title"><div class='inline'><p>Clear all unit settings</p>
-</div></p>
+        <h5 class="example_title"><div class='inline'><p>Clear all unit settings</p>
+</div></h5>
       
       <pre class="example code"><code>unit!(<span class="string"><span class="delimiter">&quot;</span><span class="content">ft</span><span class="delimiter">&quot;</span></span>)
 unit!
@@ -6852,19 +9096,19 @@ unit!
       <pre class="lines">
 
 
-765
-766
-767
-768
-769
-770
-771
-772
-773
-774</pre>
+895
+896
+897
+898
+899
+900
+901
+902
+903
+904</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 765</span>
+      <pre class="code"><span class="info file"># File 'lib/openhab/dsl.rb', line 895</span>
 
 <span class="keyword">def</span> <span class="function">unit!</span>(*units)
   units = units.each_with_object({}) <span class="keyword">do</span> |unit, r|
@@ -6886,9 +9130,9 @@ unit!
 </div>
 
         <footer>
-  Generated on Wed Apr 19 17:44:47 2023 by
+  Generated on Fri Nov 20 00:11:36 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.28 (ruby-3.1.3).
+  0.9.37 (ruby-3.4.13).
 </footer>
 
       </main>
